@@ -1,0 +1,11 @@
+PASS	Basic Statistics	TATTON_100_R1.fastq.gz
+WARN	Per base sequence quality	TATTON_100_R1.fastq.gz
+PASS	Per sequence quality scores	TATTON_100_R1.fastq.gz
+PASS	Per base sequence content	TATTON_100_R1.fastq.gz
+PASS	Per sequence GC content	TATTON_100_R1.fastq.gz
+PASS	Per base N content	TATTON_100_R1.fastq.gz
+PASS	Sequence Length Distribution	TATTON_100_R1.fastq.gz
+PASS	Sequence Duplication Levels	TATTON_100_R1.fastq.gz
+PASS	Overrepresented sequences	TATTON_100_R1.fastq.gz
+PASS	Adapter Content	TATTON_100_R1.fastq.gz
+WARN	Kmer Content	TATTON_100_R1.fastq.gz

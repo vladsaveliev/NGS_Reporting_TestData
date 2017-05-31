@@ -1,0 +1,25 @@
+details:
+- algorithm:
+    aligner: hisat2
+    quality_format: Standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: PI3Ksign2_E001006_CD4Tcells_AZ4943_NS_KT_15
+  files:
+  - /Sid/vsaveliev/RIA_0017/input/PI3Ksign2_E001006_CD4Tcells_AZ4943_NS_KT_15_S3_R1_001.fastq.gz
+  genome_build: hg38
+  metadata: {}
+- algorithm:
+    aligner: hisat2
+    quality_format: Standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: PI3Ksign2_E001006_CD4Tcells_AZ4943_S_KT_16
+  files:
+  - /Sid/vsaveliev/RIA_0017/input/PI3Ksign2_E001006_CD4Tcells_AZ4943_S_KT_16_S4_R1_001.fastq.gz
+  genome_build: hg38
+  metadata: {}
+fc_date: '2017-02-28'
+fc_name: rnaseq_1_0_2a
+upload:
+  dir: ../final

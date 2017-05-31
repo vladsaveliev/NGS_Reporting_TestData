@@ -1,0 +1,60 @@
+act_min_freq: 0.002
+bias: false
+blacklist:
+  genes:
+  - published
+  - abnormal_gc
+  - low_complexity
+  - repetitive_single_exome
+  - too_many_cosmic_mutations
+  regions:
+  - bad_promoter
+  - gc0to15
+  - gc15to20
+  - gc20to25
+  - gc25to30
+  - gc65to70
+  - gc70to75
+  - gc75to80
+  - gc80to85
+  - gc85to100
+  - low_complexity_lt51bp
+  - low_complexity_51to200bp
+  - low_complexity_gt200bp
+  - repeats
+  - self_chain
+  - heng_universal_mask
+filt_depth: 3
+filt_p_mean: 0
+filt_q_mean: 0
+germline_min_freq: 0.15
+keep_hla: false
+keep_utr_intronic: false
+max_ratio: 0.4
+max_sample_cnt: 5
+min_freq: 0.005
+min_gmaf: 0.0025
+min_mq: 10
+min_p_mean: 5
+min_q_mean: 23
+min_vd: 3
+opt_d:
+  caller: null
+  cohort_freqs_fpath: null
+  debug: true
+  filt_cnf: null
+  genome: hg19
+  log_dir: null
+  min_freq: null
+  output_dir: /Users/vlad/vagrant/NGS_Reporting/tests/results/varfilter/varfilter
+  project_name: null
+  reuse_intermediate: null
+  run_info: null
+  sample: 032269P-OVARIAN-P2mL-07-IDTUMI09_S1
+  target_type: null
+  threads: 1
+  tricky_regions_dir: null
+  vardict_txt: null
+  vcf: /Users/vlad/vagrant/NGS_Reporting/tests/data/varfilter/032269P-OVARIAN-P2mL-07-IDTUMI09_S1-vardict.anno.vcf.gz
+  work_dir: null
+signal_noise: 1.5

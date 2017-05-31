@@ -1,0 +1,3 @@
+Sample	Mapped_unique_reads	Ontarget_pct	Mapped_reads_pct	Avg_coverage	Duplicates	Mapped_paired_reads	Duplicates_pct	Sequences_flagged_as_poor_quality	Ontarget_padded_pct	Usable_pct	Mapped_reads	%GC	Total_reads	Offtarget_pct	Average_insert_size	Ontarget_unique_reads
+syn3-normal	1084550.0	80.6925452953	98.5081084218	46.6419677733	57471.0	1136902.0	4.97849504282	0.0	95.9349960813	74.6799980885	1154385.0	50.0	1171868.0	19.3074547047	334.1	875151.0
+syn3-tumor	1081024.0	80.536324818	98.5137106022	46.4026409898	57030.0	1132963.0	4.9577595065	0.0	95.8554111657	74.5600009592	1150318.0	50.0	1167673.0	19.463675182	334.5	870617.0

@@ -1,0 +1,17 @@
+act_min_freq: 0.002
+bias: false
+filt_depth: 3
+filt_p_mean: 0
+filt_q_mean: 0
+germline_min_freq: 0.15
+keep_hla: false
+keep_utr_intronic: false
+max_ratio: 0.4
+max_sample_cnt: 5
+min_freq: 0.005
+min_gmaf: 0.0025
+min_mq: 10
+min_p_mean: 5
+min_q_mean: 23
+min_vd: 3
+signal_noise: 1.5

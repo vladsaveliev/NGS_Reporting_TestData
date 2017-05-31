@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Colo_829_R2.fastq.gz
+WARN	Per base sequence quality	Colo_829_R2.fastq.gz
+PASS	Per sequence quality scores	Colo_829_R2.fastq.gz
+PASS	Per base sequence content	Colo_829_R2.fastq.gz
+PASS	Per sequence GC content	Colo_829_R2.fastq.gz
+PASS	Per base N content	Colo_829_R2.fastq.gz
+PASS	Sequence Length Distribution	Colo_829_R2.fastq.gz
+FAIL	Sequence Duplication Levels	Colo_829_R2.fastq.gz
+PASS	Overrepresented sequences	Colo_829_R2.fastq.gz
+PASS	Adapter Content	Colo_829_R2.fastq.gz
+WARN	Kmer Content	Colo_829_R2.fastq.gz

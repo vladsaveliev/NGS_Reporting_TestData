@@ -1,0 +1,7 @@
+Sample	adapter_content	Sequences flagged as poor quality	sequence_duplication_levels	avg_sequence_length	Encoding	per_base_sequence_quality	sequence_length_distribution	Sequence length	File type	basic_statistics	per_sequence_gc_content	Total Sequences	per_base_n_content	per_base_sequence_content	overrepresented_sequences	%GC	total_deduplicated_percentage	Filename	kmer_content	per_sequence_quality_scores
+Colo_829_R1	pass	0.0	fail	50.0	Illumina 1.5	warn	pass	50.0	Conventional base calls	pass	pass	160228.0	pass	pass	pass	44.0	40.5544018155	Colo_829_R1.fastq.gz	pass	pass
+Colo_829_R2	pass	0.0	fail	50.0	Illumina 1.5	warn	pass	50.0	Conventional base calls	pass	pass	160228.0	pass	pass	pass	44.0	40.7214733282	Colo_829_R2.fastq.gz	warn	pass
+NA12878EnzymeFrag_20min_R1	pass	0.0	fail	50.0	Illumina 1.5	warn	pass	50.0	Conventional base calls	pass	pass	160228.0	pass	pass	pass	44.0	40.5544018155	NA12878EnzymeFrag_20min_R1.fastq.gz	pass	pass
+NA12878EnzymeFrag_20min_R2	pass	0.0	fail	50.0	Illumina 1.5	warn	pass	50.0	Conventional base calls	pass	pass	160228.0	pass	pass	pass	44.0	40.7214733282	NA12878EnzymeFrag_20min_R2.fastq.gz	warn	pass
+TATTON_100_R1	pass	0.0	pass	50.0	Illumina 1.5	warn	pass	50.0	Conventional base calls	pass	pass	80114.0	pass	pass	pass	44.0	77.2311955463	TATTON_100_R1.fastq.gz	warn	pass
+TATTON_100_R2	pass	0.0	pass	50.0	Illumina 1.5	warn	pass	50.0	Conventional base calls	pass	pass	80114.0	pass	pass	pass	44.0	77.6143994807	TATTON_100_R2.fastq.gz	pass	pass

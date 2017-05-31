@@ -1,0 +1,144 @@
+date: '2017-05-18 03:23:51.267030'
+upload: /Sid/vsaveliev/dream-chr21/final
+bcbio_system: ''
+samples:
+- description: syn3-tumor
+  dirs:
+    fastq: null
+    galaxy: /home/vsaveliev/bcbio/galaxy
+    work: /Sid/vsaveliev/dream-chr21/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_87_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: ../rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: ../rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: ../rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      genesplicer: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/genesplicer
+      lcr: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 34
+  metadata:
+    batch: syn3
+    phenotype: tumor
+  sam_ref: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '50'
+      Average_insert_size: 334.5
+      Avg_coverage: 46.40264098978876
+      Duplicates: 57030
+      Duplicates_pct: 4.957759506501681
+      Mapped_paired_reads: 1132963
+      Mapped_reads: 1150318
+      Mapped_reads_pct: 98.5137106021977
+      Mapped_unique_reads: 1081024
+      Name: syn3-tumor
+      Offtarget_pct: 19.463675182049613
+      Ontarget_padded_pct: 95.85541116570955
+      Ontarget_pct: 80.53632481795039
+      Ontarget_unique_reads: 870617
+      Quality format: standard
+      Sequence length: 30-101
+      Sequences flagged as poor quality: '0'
+      Total_reads: 1167673
+      Usable_pct: 74.56000095917264
+- description: syn3-normal
+  dirs:
+    fastq: null
+    galaxy: /home/vsaveliev/bcbio/galaxy
+    work: /Sid/vsaveliev/dream-chr21/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_vep_87_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: ../rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: ../rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: ../rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mirbase_hairpin: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      ancestral: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      cosmic: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/cosmic-v68-hg19.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/dbsnp-147.vcf.gz
+      encode_blacklist: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      genesplicer: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/genesplicer
+      lcr: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      qsignature: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 34
+  metadata:
+    batch: syn3
+    phenotype: normal
+  sam_ref: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '50'
+      Average_insert_size: 334.1
+      Avg_coverage: 46.64196777331773
+      Duplicates: 57471
+      Duplicates_pct: 4.978495042815005
+      Mapped_paired_reads: 1136902
+      Mapped_reads: 1154385
+      Mapped_reads_pct: 98.50810842176764
+      Mapped_unique_reads: 1084550
+      Name: syn3-normal
+      Offtarget_pct: 19.307454704716243
+      Ontarget_padded_pct: 95.93499608132406
+      Ontarget_pct: 80.69254529528376
+      Ontarget_unique_reads: 875151
+      Quality format: standard
+      Sequence length: 30-101
+      Sequences flagged as poor quality: '0'
+      Total_reads: 1171868
+      Usable_pct: 74.67999808852191

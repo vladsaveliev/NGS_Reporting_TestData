@@ -1,0 +1,45 @@
+##Target=whole genome
+##Reference size=48129895
+##Scope=WGS
+Sample	NA12878EnzymeFrag_20min	TATTON_100	Colo_829
+Original reads	320456	160228	320456
+Reads	320456	160228	320456
+Mapped reads	4120	2109	4120
+Percentage of mapped reads	0.0128566792321	0.0131624934468	0.0128566792321
+Properly paired mapped reads percent	0.0128566792321	0.0131624934468	0.0128566792321
+Duplication rate	0.0092	0.0041	0.0092
+Read min length	50	50	50
+Read mean length	50	50	50
+Read max length	50	50	50
+Median insert size	44	51	44
+Median GC	0.471219512195	0.477962962963	0.471219512195
+Covered bases in genome	520	520	520
+Percentage of genome covered by at least 1 read	1.08040958743e-05	1.08040958743e-05	1.08040958743e-05
+Covered bases in exome	.	.	.
+Percentage of exome covered by at least 1 read	.	.	.
+Percentage of reads mapped on exome	.	.	.
+Percentage of reads mapped off exome	.	.	.
+Percentage of usable reads	0.0036354444916	0.00903088099458	0.0036354444916
+Median genome coverage depth	0	0	0
+Average genome coverage depth	0.0008	0.0011	0.0008
+Std. dev. of genome coverage depth	.	.	.
+Percentage of genome within 20% of med depth	.	.	.
+Part of genome covered at least by 1x	1.08040958743e-05	1.08040958743e-05	1.08040958743e-05
+Part of genome covered at least by 5x	8.58094537709e-06	8.8718248814e-06	8.58094537709e-06
+Part of genome covered at least by 10x	8.16540322808e-06	8.24851165788e-06	8.16540322808e-06
+Part of genome covered at least by 25x	6.69022859909e-06	6.71100570654e-06	6.69022859909e-06
+Part of genome covered at least by 50x	6.21235512772e-06	6.12924669792e-06	6.21235512772e-06
+Part of genome covered at least by 100x	4.59174074658e-06	4.55018653168e-06	4.59174074658e-06
+Part of genome covered at least by 500x	.	.	.
+Part of genome covered at least by 1000x	.	.	.
+Part of genome covered at least by 5000x	.	.	.
+Part of genome covered at least by 10000x	.	.	.
+Part of genome covered at least by 50000x	.	.	.
+Estimated genome full coverage depth	0.0008	0.0011	0.0008
+Mean Mapping Quality	0.52	0.52	0.52
+Mismatches	2309	3193	2309
+Insertions	8	4	8
+Deletions	0	0	0
+Homopolymer indels	0	0	0
+Qualimap	Qualimap	Qualimap	Qualimap
+Sex	.	.	.

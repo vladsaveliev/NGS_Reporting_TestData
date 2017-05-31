@@ -1,0 +1,6 @@
+FCID,Lane,SampleID,SampleRef,Index,Description,Control,Recipe,Operator,SampleProject
+HT7FKBCXX,1,NA12878EnzymeFrag_20min,NA12878EnzymeFrag_20min,ATCACG,EnzymeFragExome,N,,ksvw330,TATTON_MEDI_ASIA
+HT7FKBCXX,1,NA12878EnzymeFrag_20min,NA12878EnzymeFrag_20min,CGATGT,EnzymeFragExome,N,,ksvw330,TATTON_MEDI_ASIA
+HMNFGADXX,1,TATTON_100,,GTGAAA,2-7267,N,,DanielStetson,TATTON_MEDI_ASIA
+HMNFGADXX,1,Colo-829,,GAGTGG,2-7261,N,,DanielStetson,TATTON_MEDI_ASIA
+HMNFGADXX,2,Colo-829,,GAGTGG,2-7261,N,,DanielStetson,TATTON_MEDI_ASIA

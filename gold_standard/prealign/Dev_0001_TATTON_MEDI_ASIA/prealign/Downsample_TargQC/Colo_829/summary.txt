@@ -1,0 +1,48 @@
+## Target: whole genome
+## Reference size: 48,129,895bp
+## Scope: WGS
+## Target: whole genome                          
+## Reference size: 48,129,895bp                  
+## Scope: WGS                                    
+Sample                                           Colo_829  
+Original reads                                   320,456   
+Reads                                            320,456   
+Mapped reads                                     4120      
+Percentage of mapped reads                       1.29%     
+Properly paired mapped reads percent             1.29%     
+Duplication rate                                 0.92%     
+Read min length                                  50        
+Read mean length                                 50        
+Read max length                                  50        
+Median insert size                               44        
+Median GC                                        47.12%    
+Covered bases in genome                          520       
+Percentage of genome covered by at least 1 read  0.001%    
+Covered bases in exome                           .         
+Percentage of exome covered by at least 1 read   .         
+Percentage of reads mapped on exome              .         
+Percentage of reads mapped off exome             .         
+Percentage of usable reads                       0.36%     
+Median genome coverage depth                     0         
+Average genome coverage depth                    0.0008    
+Std. dev. of genome coverage depth               .         
+Percentage of genome within 20% of med depth     .         
+Part of genome covered at least by 1x            0.001%    
+Part of genome covered at least by 5x            0.0009%   
+Part of genome covered at least by 10x           0.0008%   
+Part of genome covered at least by 25x           0.0007%   
+Part of genome covered at least by 50x           0.0006%   
+Part of genome covered at least by 100x          0.0005%   
+Part of genome covered at least by 500x          .         
+Part of genome covered at least by 1000x         .         
+Part of genome covered at least by 5000x         .         
+Part of genome covered at least by 10000x        .         
+Part of genome covered at least by 50000x        .         
+Estimated genome full coverage depth             0.0008    
+Mean Mapping Quality                             0.52      
+Mismatches                                       2309      
+Insertions                                       8         
+Deletions                                        0         
+Homopolymer indels                               0         
+Qualimap                                         Qualimap  
+Sex                                              .         

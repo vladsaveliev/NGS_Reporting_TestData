@@ -99,3 +99,15 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+.idea
+
+results
+results_devel
+results_docker
+data/prealign/datasets/HiSeq/150612_D00443_0168_AHMNFGADXX/Unalign/Project_TATTON_MEDI_ASIA/fastq/
+data/prealign/datasets/HiSeq/150612_D00443_0168_AHMNFGADXX/prealign*/
+gold_standard/bcbio_postproc/*/final/*/*.bam*
+data/bcbio_postproc/NA12878-exome/
+data/combine_bcbio_projects/dream_chr21_normal/
+data/combine_bcbio_projects/dream_chr21_tumor/

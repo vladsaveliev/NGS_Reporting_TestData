@@ -1,0 +1,11 @@
+PASS	Basic Statistics	NA12878EnzymeFrag_20min_R2.fastq.gz
+WARN	Per base sequence quality	NA12878EnzymeFrag_20min_R2.fastq.gz
+PASS	Per sequence quality scores	NA12878EnzymeFrag_20min_R2.fastq.gz
+PASS	Per base sequence content	NA12878EnzymeFrag_20min_R2.fastq.gz
+PASS	Per sequence GC content	NA12878EnzymeFrag_20min_R2.fastq.gz
+PASS	Per base N content	NA12878EnzymeFrag_20min_R2.fastq.gz
+PASS	Sequence Length Distribution	NA12878EnzymeFrag_20min_R2.fastq.gz
+FAIL	Sequence Duplication Levels	NA12878EnzymeFrag_20min_R2.fastq.gz
+PASS	Overrepresented sequences	NA12878EnzymeFrag_20min_R2.fastq.gz
+PASS	Adapter Content	NA12878EnzymeFrag_20min_R2.fastq.gz
+WARN	Kmer Content	NA12878EnzymeFrag_20min_R2.fastq.gz

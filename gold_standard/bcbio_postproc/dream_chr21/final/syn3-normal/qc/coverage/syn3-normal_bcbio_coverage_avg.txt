@@ -1,0 +1,13 @@
+cutoff_reads	bases_pct	sample
+percentage500	0.078828860622	syn3-normal
+percentage100	1.49855802841	syn3-normal
+percentage1000	0.0564054079858	syn3-normal
+percentage1	99.9064341041	syn3-normal
+percentage5	99.1312061954	syn3-normal
+percentage50	44.9569731535	syn3-normal
+percentage5000	0.0	syn3-normal
+percentage250	0.205741281368	syn3-normal
+percentage20	91.551553764	syn3-normal
+percentage50000	0.0	syn3-normal
+percentage10000	0.0	syn3-normal
+percentage10	97.4857975522	syn3-normal
