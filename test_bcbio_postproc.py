@@ -7,7 +7,6 @@ from datetime import datetime
 import shutil
 import subprocess
 
-from ngs_reporting import version
 from ngs_utils.testing import BaseTestCase, info, check_call
 from ngs_utils.utils import is_az
 
@@ -28,15 +27,15 @@ class Test_bcbio_postproc(BaseTestCase):
     def _run_postproc(self, bcbio_dirname):
         bcbio_dir = join(self.data_dir, bcbio_dirname)
         assert isdir(bcbio_dir), 'data dir ' + bcbio_dir + ' not found'
-        postproc_dir = join(self.results_dir, bcbio_dirname)
+        bcbio_proj_dir = join(self.results_dir, bcbio_dirname)
         
-        if exists(postproc_dir):
-            last_changed = datetime.fromtimestamp(getctime(postproc_dir))
-            prev_run = postproc_dir + '_' + last_changed.strftime('%Y_%m_%d_%H_%M_%S')
-            os.rename(postproc_dir, prev_run)
-        shutil.copytree(bcbio_dir, postproc_dir, symlinks=True)
+        if exists(bcbio_proj_dir):
+            last_changed = datetime.fromtimestamp(getctime(bcbio_proj_dir))
+            prev_run = bcbio_proj_dir + '_' + last_changed.strftime('%Y_%m_%d_%H_%M_%S')
+            os.rename(bcbio_proj_dir, prev_run)
+        shutil.copytree(bcbio_dir, bcbio_proj_dir, symlinks=True)
 
-        cmdl = [self.script, postproc_dir]  # , '-d', '-t', '1'
+        cmdl = [self.script, bcbio_proj_dir]  # , '-d', '-t', '1'
         if 'TRAVIS' in os.environ:
             cmdl.extend(['--sys-cnf', join(self.source_dir, 'az', 'configs', 'system_info_Travis.yaml')])
 
@@ -50,7 +49,7 @@ class Test_bcbio_postproc(BaseTestCase):
             run_with_error = True
         info('-' * 100)
         info('')
-        return postproc_dir, run_with_error
+        return bcbio_proj_dir, run_with_error
 
     def _check_file(self, diff_failed, path, ignore_matching_lines=None, wrapper=None, check_diff=True):
         try:
@@ -64,12 +63,12 @@ class Test_bcbio_postproc(BaseTestCase):
         return diff_failed
 
     def test_01_dream_chr21(self):
-        postproc_dir, run_with_error = self._run_postproc(bcbio_dirname='dream_chr21')
+        bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname='dream_chr21')
 
         datestamp_name = '2014-08-13_dream-chr21'
         sample_name = 'syn3-tumor'
-        datestamp_dir = join(postproc_dir, 'final', datestamp_name)
-        sample_dir = join(postproc_dir, 'final', sample_name)
+        datestamp_dir = join(bcbio_proj_dir, 'final', datestamp_name)
+        sample_dir = join(bcbio_proj_dir, 'final', sample_name)
 
         VCF_IGNORE_LINES = [
             'bcftools_annotateVersion',
@@ -77,7 +76,7 @@ class Test_bcbio_postproc(BaseTestCase):
             '^##INFO=',
         ]
         failed = False
-        failed = self._check_file(failed, join(postproc_dir, 'config', 'run_info_ExomeSeq.yaml'))
+        failed = self._check_file(failed, join(bcbio_proj_dir, 'config', 'run_info_ExomeSeq.yaml'))
         failed = self._check_file(failed, join(datestamp_dir, 'vardict.PASS.txt'))
         failed = self._check_file(failed, join(datestamp_dir, 'var', 'vardict.PASS.txt'))
         failed = self._check_file(failed, join(datestamp_dir, 'var', 'vardict.txt'))
@@ -103,15 +102,15 @@ class Test_bcbio_postproc(BaseTestCase):
 
         assert not run_with_error, 'post-processing finished with error'
         assert not failed, 'some of file checks have failed'
-        shutil.rmtree(join(postproc_dir, 'work'))
+        shutil.rmtree(join(bcbio_proj_dir, 'work'))
 
     def test_02_rnaseq(self):
-        postproc_dir, run_with_error = self._run_postproc(bcbio_dirname='rnaseq')
+        bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname='rnaseq')
 
         datestamp_name = '2017-02-28_rnaseq_1_0_2a'
         sample_name = 'PI3Ksign2_E001006_CD4Tcells_AZ4943_NS_KT_15'
-        datestamp_dir = join(postproc_dir, 'final', datestamp_name)
-        sample_dir = join(postproc_dir, 'final', sample_name)
+        datestamp_dir = join(bcbio_proj_dir, 'final', datestamp_name)
+        sample_dir = join(bcbio_proj_dir, 'final', sample_name)
 
         failed = False
         failed = self._check_file(failed, join(datestamp_dir, 'annotated_combined.counts'))
@@ -128,4 +127,4 @@ class Test_bcbio_postproc(BaseTestCase):
 
         assert not run_with_error, 'post-rpocessing finished with error'
         assert not failed, 'some of the diffs have failed'
-        shutil.rmtree(join(postproc_dir, 'work'))
+        shutil.rmtree(join(bcbio_proj_dir, 'work'))
