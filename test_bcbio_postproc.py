@@ -1,5 +1,4 @@
 import traceback
-
 import os
 import sys
 from os.path import dirname, join, exists, isfile, splitext, basename, isdir, relpath, getctime, getsize, abspath, expanduser
@@ -8,7 +7,7 @@ import shutil
 import subprocess
 
 from ngs_utils.testing import BaseTestCase, info, check_call
-from ngs_utils.utils import is_az
+from ngs_utils.utils import is_az, is_local
 
 
 class Test_bcbio_postproc(BaseTestCase):
@@ -17,11 +16,10 @@ class Test_bcbio_postproc(BaseTestCase):
     data_dir = join(dirname(__file__), BaseTestCase.data_dir, script)
     results_dir = join(dirname(__file__), BaseTestCase.results_dir, script)
     gold_standard_dir = join(dirname(__file__), BaseTestCase.gold_standard_dir, script)
-    source_dir = abspath(dirname(dirname(__file__)))
 
     def setUp(self):
-        if not is_az():
-            os.environ['PATH'] = self.source_dir + '/venv_ngs_reporting/bin:' + expanduser('~/bin') + ':/usr/local/bin:/usr/bin:/bin:/usr/sbin:' + os.environ['PATH']
+        if not is_local():
+            os.environ['PATH'] = '/Users/vlad/miniconda3/envs/ngs_reporting/bin:' + expanduser('~/bin') + ':/usr/local/bin:/usr/bin:/bin:/usr/sbin:' + os.environ['PATH']
         BaseTestCase.setUp(self)
 
     def _run_postproc(self, bcbio_dirname):
@@ -36,8 +34,6 @@ class Test_bcbio_postproc(BaseTestCase):
         shutil.copytree(bcbio_dir, bcbio_proj_dir, symlinks=True)
 
         cmdl = [self.script, bcbio_proj_dir]  # , '-d', '-t', '1'
-        if 'TRAVIS' in os.environ:
-            cmdl.extend(['--sys-cnf', join(self.source_dir, 'az', 'configs', 'system_info_Travis.yaml')])
 
         run_with_error = False
         info('-' * 100)
