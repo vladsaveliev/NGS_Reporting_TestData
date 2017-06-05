@@ -17,7 +17,6 @@ class Test_varfilter(BaseTestCase):
     source_dir = abspath(dirname(dirname(__file__)))
 
     def setUp(self):
-        os.environ['PATH'] = self.source_dir + '/venv_ngs_reporting/bin:' + expanduser('~/bin') + ':/usr/local/bin:/usr/bin:/bin:/usr/sbin:' + os.environ['PATH']
         BaseTestCase.setUp(self)
 
     def _test(self, name, i_vcf=None, i_vcf2txt=None,
@@ -93,7 +92,6 @@ class Test_variants(BaseTestCase):
     source_dir = abspath(dirname(dirname(__file__)))
 
     def setUp(self):
-        os.environ['PATH'] = self.source_dir + '/venv_ngs_reporting/bin:' + expanduser('~/bin') + ':/usr/local/bin:/usr/bin:/bin:/usr/sbin:' + os.environ['PATH']
         BaseTestCase.setUp(self)
 
     def test_01(self):

@@ -18,8 +18,10 @@ class Test_bcbio_postproc(BaseTestCase):
     gold_standard_dir = join(dirname(__file__), BaseTestCase.gold_standard_dir, script)
 
     def setUp(self):
-        if not is_local():
+        if is_local():
+            info('Local - setting up PATH')
             os.environ['PATH'] = '/Users/vlad/miniconda3/envs/ngs_reporting/bin:' + expanduser('~/bin') + ':/usr/local/bin:/usr/bin:/bin:/usr/sbin:' + os.environ['PATH']
+            info('PATH =  ' + os.environ['PATH'])
         BaseTestCase.setUp(self)
 
     def _run_postproc(self, bcbio_dirname):

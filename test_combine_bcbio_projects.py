@@ -15,7 +15,6 @@ class Test_combine_bcbio_projects(BaseTestCase):
     source_dir = abspath(dirname(dirname(__file__)))
 
     def setUp(self):
-        os.environ['PATH'] = self.source_dir + '/venv_ngs_reporting/bin:' + expanduser('~/bin') + ':/usr/local/bin:/usr/bin:/bin:/usr/sbin:' + os.environ['PATH']
         BaseTestCase.setUp(self)
 
     def _test(self, output_dirname, input_bcbio_dirnames=list()):
