@@ -27,11 +27,11 @@ class Test_bcbio_postproc(BaseTestCase):
         assert isdir(bcbio_dir), 'data dir ' + bcbio_dir + ' not found'
         bcbio_proj_dir = join(self.results_dir, bcbio_dirname)
         
-        # if exists(bcbio_proj_dir):
-        #     last_changed = datetime.fromtimestamp(getctime(bcbio_proj_dir))
-        #     prev_run = bcbio_proj_dir + '_' + last_changed.strftime('%Y_%m_%d_%H_%M_%S')
-        #     os.rename(bcbio_proj_dir, prev_run)
-        # shutil.copytree(bcbio_dir, bcbio_proj_dir, symlinks=True)
+        if exists(bcbio_proj_dir):
+            last_changed = datetime.fromtimestamp(getctime(bcbio_proj_dir))
+            prev_run = bcbio_proj_dir + '_' + last_changed.strftime('%Y_%m_%d_%H_%M_%S')
+            os.rename(bcbio_proj_dir, prev_run)
+        shutil.copytree(bcbio_dir, bcbio_proj_dir, symlinks=True)
 
         cmdl = [self.script, bcbio_proj_dir, '-d', '-t', '1']
 
