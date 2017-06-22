@@ -4,6 +4,7 @@
 ---
 details:
 - algorithm:
+    vcfanno: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/vcfanno.toml
     aligner: none
     mark_duplicates: true
     recalibrate: false
@@ -13,7 +14,7 @@ details:
     sv_regions: ../input/NGv3.chr21.4col.bed
     coverage: ../input/NGv3.chr21.4col.bed
     svprioritize: ../input/sv_prio.bed
-    svcaller: [seq2c]
+    svcaller: [seq2c, cnvkit]
     tools_on: [qualimap_full, damage_filter]
     effects_transcripts: canonical_cancer
   analysis: variant2
@@ -24,6 +25,7 @@ details:
     batch: syn3
     phenotype: normal
 - algorithm:
+    vcfanno: /home/vsaveliev/bcbio/genomes/Hsapiens/hg19/variation/vcfanno.toml
     aligner: none
     mark_duplicates: true
     recalibrate: false
@@ -33,7 +35,7 @@ details:
     sv_regions: ../input/NGv3.chr21.4col.bed
     coverage: ../input/NGv3.chr21.4col.bed
     svprioritize: ../input/sv_prio.bed
-    svcaller: [seq2c]
+    svcaller: [seq2c, cnvkit]
     tools_on: [qualimap_full, damage_filter]
     effects_transcripts: canonical_cancer
   analysis: variant2

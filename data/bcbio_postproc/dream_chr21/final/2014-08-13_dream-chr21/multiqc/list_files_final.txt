@@ -80,5 +80,6 @@ syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/mapping_quality_histog
 syn3-tumor/qc/samtools/syn3-tumor.txt
 syn3-tumor/qc/variants/syn3-tumor.txt
 syn3-tumor/qc/variants/syn3-tumor_bcftools_stats.txt
+syn3-tumor/qc/viral/syn3-tumor-gdc-viral-counts.txt
 2014-08-13_dream-chr21/multiqc/report/metrics/syn3-normal_bcbio.txt
 2014-08-13_dream-chr21/multiqc/report/metrics/syn3-tumor_bcbio.txt

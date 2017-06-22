@@ -80,6 +80,7 @@
 /Sid/vsaveliev/dream-chr21/work/qc/syn3-tumor/samtools/syn3-tumor.txt
 /Sid/vsaveliev/dream-chr21/work/qc/syn3-tumor/variants/syn3-tumor.txt
 /Sid/vsaveliev/dream-chr21/work/qc/syn3-tumor/variants/syn3-tumor_bcftools_stats.txt
+/Sid/vsaveliev/dream-chr21/work/qc/syn3-tumor/viral/syn3-tumor-gdc-viral-counts.txt
 htseq-count/*summary
 trimmed
 /Sid/vsaveliev/dream-chr21/work/qc/multiqc/report/metrics/syn3-normal_bcbio.txt
