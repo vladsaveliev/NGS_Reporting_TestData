@@ -1,5 +1,5 @@
 bamtools,2.4.0
-bcbio-nextgen,1.0.3
+bcbio-nextgen,1.0.4a0-4860cb1
 bcbio-variation,0.2.6
 bcftools,1.4.1
 bedtools,2.26.0
@@ -16,6 +16,7 @@ featurecounts,1.4.4
 freebayes,1.1.0
 gatk,3.7
 gatk-framework,3.6.24
+gatk4,4.0a1.2.7.2
 gemini,0.20.0
 grabix,0.1.8
 hisat2,2.1.0
