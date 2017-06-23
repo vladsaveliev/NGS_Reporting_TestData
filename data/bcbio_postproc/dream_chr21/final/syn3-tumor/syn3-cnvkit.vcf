@@ -1,5 +1,5 @@
 ##fileformat=VCFv4.2
-##fileDate=20170622
+##fileDate=20170623
 ##source=CNVkit v0.8.6.dev0
 ##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
 ##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
@@ -18,7 +18,7 @@
 ##FORMAT=<ID=CN,Number=1,Type=Integer,Description="Copy number genotype for imprecise events">
 ##FORMAT=<ID=CNQ,Number=1,Type=Float,Description="Copy number genotype quality for imprecise events">
 ##SnpEffVersion="4.3i (build 2016-12-15 22:33), by Pablo Cingolani"
-##SnpEffCmd="SnpEff  -cancer -i vcf -o vcf -csvStats /Sid/vsaveliev/dream-chr21-1.0.3/work/structural/syn3-tumor/cnvkit/raw/syn3-tumor-dedup-syn3-call-effects-stats.csv -s /Sid/vsaveliev/dream-chr21-1.0.3/work/structural/syn3-tumor/cnvkit/raw/syn3-tumor-dedup-syn3-call-effects-stats.html GRCh37.75 /Sid/vsaveliev/dream-chr21-1.0.3/work/structural/syn3-tumor/cnvkit/raw/syn3-tumor-dedup-syn3-call.vcf "
+##SnpEffCmd="SnpEff  -cancer -i vcf -o vcf -csvStats /Sid/vsaveliev/dream-chr21/work/structural/syn3-tumor/cnvkit/raw/syn3-tumor-dedup-syn3-call-effects-stats.csv -s /Sid/vsaveliev/dream-chr21/work/structural/syn3-tumor/cnvkit/raw/syn3-tumor-dedup-syn3-call-effects-stats.html GRCh37.75 /Sid/vsaveliev/dream-chr21/work/structural/syn3-tumor/cnvkit/raw/syn3-tumor-dedup-syn3-call.vcf "
 ##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
 ##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected' ">
 ##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected' ">

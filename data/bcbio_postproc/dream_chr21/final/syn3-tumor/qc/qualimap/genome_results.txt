@@ -4,7 +4,7 @@ BamQC report
 >>>>>>> Input
 
      bam file = syn3-tumor.bam
-     outfile = /Sid/vsaveliev/dream-chr21/work/bcbiotx/tmpiWyCgI/syn3-tumor/genome_results.txt
+     outfile = /Sid/vsaveliev/dream-chr21/work/bcbiotx/tmpdgKvAf/syn3-tumor/genome_results.txt
 
 
 >>>>>>> Reference

@@ -3,15 +3,15 @@
 
 Name , Value
 Genome , GRCh37.75 
-Date , 2017-06-22 13:44
+Date , 2017-06-23 14:02
 SnpEff_version , SnpEff 4.3i (build 2016-12-15 22:33), by Pablo Cingolani
-Command_line_arguments , SnpEff  -cancer -i vcf -o vcf -csvStats /Sid/vsaveliev/dream-chr21-1.0.3/work/vardict/syn3-effects-stats.csv -s /Sid/vsaveliev/dream-chr21-1.0.3/work/vardict/syn3-effects-stats.html GRCh37.75 /Sid/vsaveliev/dream-chr21-1.0.3/work/vardict/syn3.vcf.gz 
+Command_line_arguments , SnpEff  -cancer -i vcf -o vcf -csvStats /Sid/vsaveliev/dream-chr21/work/vardict/syn3-effects-stats.csv -s /Sid/vsaveliev/dream-chr21/work/vardict/syn3-effects-stats.html GRCh37.75 /Sid/vsaveliev/dream-chr21/work/vardict/syn3.vcf.gz 
 Warnings , 304 
 Number_of_lines_in_input_file, 3182
 Number_of_variants_before_filter, 3182
 Number_of_not_variants , 0
 Number_of_variants_processed , 3182
-Number_of_known_variants <br>(i.e. non-empty ID) , 2997, 94.186047% 
+Number_of_known_variants <br>(i.e. non-empty ID) , 3014, 94.720302% 
 Number_of_effects , 4728 
 Genome_total_length ,32036512383 
 Genome_effective_length ,48129895 
@@ -115,9 +115,9 @@ Ts/Tv ,2.448,2.418,2.433
 # Ts/Tv : Known variants
 
 Sample ,syn3-tumor,syn3-normal,Total
-Transitions ,2495,2488,4983
-Transversions ,1008,1016,2024
-Ts/Tv ,2.475,2.449,2.462
+Transitions ,2499,2492,4991
+Transversions ,1012,1020,2032
+Ts/Tv ,2.469,2.443,2.456
 
 
 # Allele frequency
