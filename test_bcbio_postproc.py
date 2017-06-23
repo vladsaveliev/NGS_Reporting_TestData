@@ -7,7 +7,7 @@ import shutil
 import subprocess
 
 from ngs_utils.testing import BaseTestCase, info, check_call
-from ngs_utils.utils import is_az, is_local
+from ngs_utils.utils import is_az, is_local, is_travis
 
 
 class Test_bcbio_postproc(BaseTestCase):
@@ -35,7 +35,7 @@ class Test_bcbio_postproc(BaseTestCase):
             os.rename(bcbio_proj_dir, prev_run)
         shutil.copytree(bcbio_dir, bcbio_proj_dir, symlinks=True)
 
-        cmdl = [self.script, bcbio_proj_dir, '-d', '-t', '1']
+        cmdl = [self.script, bcbio_proj_dir, '--eval-panel', '-d', '-t', '1']
 
         run_with_error = False
         info('-' * 100)
@@ -74,6 +74,7 @@ class Test_bcbio_postproc(BaseTestCase):
             'bcftools_annotateVersion',
             'bcftools_annotateCommand',
             '^##INFO=',
+            '^##FILTER=',
         ]
         failed = False
         failed = self._check_file(failed, join(bcbio_proj_dir, 'config', 'run_info_ExomeSeq.yaml'))
@@ -83,9 +84,9 @@ class Test_bcbio_postproc(BaseTestCase):
         failed = self._check_file(failed, join(datestamp_dir, 'var', 'vardict.REJECT.txt'))
         failed = self._check_file(failed, join(datestamp_dir, 'var', 'vardict.PASS.json'))
         failed = self._check_file(failed, join(datestamp_dir, 'var', 'vardict.vcf.gz'), VCF_IGNORE_LINES)
-        failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.tsv'))
-        failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.filt.tsv'))
-        failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c-coverage.tsv'))
+        failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.tsv'), wrapper=['sort'])
+        failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.filt.tsv'), wrapper=['sort'])
+        failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c-coverage.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c_mapping_reads.txt'))
         failed = self._check_file(failed, join(datestamp_dir, 'call_vis.html'),
                                   check_diff=False)
