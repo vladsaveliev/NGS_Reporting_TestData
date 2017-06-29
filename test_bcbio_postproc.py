@@ -35,7 +35,7 @@ class Test_bcbio_postproc(BaseTestCase):
             os.rename(bcbio_proj_dir, prev_run)
         shutil.copytree(bcbio_dir, bcbio_proj_dir, symlinks=True)
 
-        cmdl = [self.script, bcbio_proj_dir, '--eval-panel', '-d', '-t', '1']
+        cmdl = [self.script, bcbio_proj_dir, '--eval-panel']  # '-d', '-t', '1'
 
         run_with_error = False
         info('-' * 100)
@@ -100,11 +100,7 @@ class Test_bcbio_postproc(BaseTestCase):
         failed = self._check_file(failed, join(sample_dir, 'varFilter', 'vardict.PASS.txt'))
         failed = self._check_file(failed, join(sample_dir, 'varFilter', 'vardict.txt'))
         failed = self._check_file(failed, join(sample_dir, 'varFilter', 'vardict.REJECT.txt'))
-        failed = self._check_file(failed, join(sample_dir, 'ngs_report', 'circos.html'),
-                                  check_diff=False)
-                                  # wrapper=['grep', '-A1', '<div id=".*_json">', '|', 'grep', '-v', '<div id=".*_json">'],
-                                  # json_diff=True)
-        failed = self._check_file(failed, join(sample_dir, 'ngs_report', 'ngs_report.html'),
+        failed = self._check_file(failed, join(datestamp_dir, 'reports', sample_name + '.html'),
                                   check_diff=False)
                                   # wrapper=['grep', '-A1', '<div id=".*_json">', '|', 'grep', '-v', '<div id=".*_json">'],
                                   # json_diff=True)
