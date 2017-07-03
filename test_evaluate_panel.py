@@ -15,6 +15,7 @@ from ngs_utils.testing import BaseTestCase, info, check_call, swap_output, swap_
 class Test_evaluate_panel(BaseTestCase):
     script = 'evaluate_panel'
 
+    data_dir = join(dirname(__file__), BaseTestCase.data_dir, script)
     results_dir = join(dirname(__file__), BaseTestCase.results_dir, script)
     gold_standard_dir = join(dirname(__file__), BaseTestCase.gold_standard_dir, script)
     source_dir = abspath(dirname(dirname(__file__)))
@@ -23,7 +24,7 @@ class Test_evaluate_panel(BaseTestCase):
         BaseTestCase.setUp(self)
 
     def test(self):
-        bcbio_dir = join(dirname(__file__), BaseTestCase.data_dir, 'bcbio_postproc', 'dream_chr21')
+        bcbio_dir = join(dirname(Test_evaluate_panel.data_dir), 'bcbio_postproc', 'dream_chr21')
         assert isdir(bcbio_dir), 'data dir ' + bcbio_dir + ' not found'
         
         o_dir = join(self.results_dir, 'capture_eval')
@@ -38,8 +39,9 @@ class Test_evaluate_panel(BaseTestCase):
         info('-' * 100)
         info('')
 
-        self._check_file_throws(join(o_dir, 'low_panel_coverage.50.bed.gz'))
-        
+        self._check_file_throws(join(o_dir, 'low_panel_coverage.50.bed.gz'),
+                                ignore_matching_lines=['Showing low-covered regions for project'])
+
         shutil.rmtree(join(o_dir, 'work'))
         
         swap_prev_symlink(o_dir, prev_o_dir)
