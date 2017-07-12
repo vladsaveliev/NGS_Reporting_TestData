@@ -6,6 +6,7 @@ filt_q_mean: 0
 germline_min_freq: 0.15
 keep_hla: false
 keep_utr_intronic: false
+keep_whole_genome: false
 max_ratio: 0.4
 max_sample_cnt: 5
 min_freq: 0.005
