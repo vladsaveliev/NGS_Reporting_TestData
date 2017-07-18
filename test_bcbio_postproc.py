@@ -88,7 +88,7 @@ class Test_bcbio_postproc(BaseTestCase):
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.filt.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c-coverage.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c_mapping_reads.txt'))
-        failed = self._check_file(failed, join(datestamp_dir, 'call_vis.html'),
+        failed = self._check_file(failed, join(datestamp_dir, 'reports', 'call_vis.html'),
                                   check_diff=False)
                                   # wrapper=['grep', '-A1', '<div id=".*_json">', '|', 'grep', '-v', '<div id=".*_json">'],
                                   # json_diff=True)
