@@ -35,7 +35,7 @@ class Test_bcbio_postproc(BaseTestCase):
             os.rename(bcbio_proj_dir, prev_run)
         shutil.copytree(bcbio_dir, bcbio_proj_dir, symlinks=True)
 
-        cmdl = [self.script, bcbio_proj_dir, '--eval-panel']  # '-d', '-t', '1'
+        cmdl = [self.script, bcbio_proj_dir, '--eval-panel', '-d', '-t', '1']
 
         run_with_error = False
         info('-' * 100)
