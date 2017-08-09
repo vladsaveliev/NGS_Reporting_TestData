@@ -97,7 +97,7 @@ class Test_variants(BaseTestCase):
     def test_01(self):
         inp_vcf = join(self.data_dir, 'syn3-vardict.vcf.gz')
         o_dir = join(self.results_dir, 'variants')
-        cmdl = 'variants -o {o_dir} -g hg19 {inp_vcf}'.format(**locals())
+        cmdl = 'variants -o {o_dir} -g hg19 {inp_vcf} -t 1 -d'.format(**locals())
         os.chdir(self.results_dir)
 
         prev_o_dir = swap_output(o_dir)
