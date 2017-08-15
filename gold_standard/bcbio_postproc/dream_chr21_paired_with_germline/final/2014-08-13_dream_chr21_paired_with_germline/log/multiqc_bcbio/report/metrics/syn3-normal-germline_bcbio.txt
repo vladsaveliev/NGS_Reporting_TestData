@@ -1,0 +1,4 @@
+Name	syn3-normal-germline
+Quality_format	standard
+sample	syn3-normal-germline
+rRNA_rate	NA

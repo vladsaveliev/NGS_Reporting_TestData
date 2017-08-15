@@ -1,11 +1,16 @@
-BASEDIR=rnaseq
-mv $BASEDIR $BASEDIR.bak
-rsync -tavz --exclude "work" chi:/Sid/vsaveliev/RIA_0017/rnaseq_1_0_2a/ $BASEDIR
-cd $BASEDIR
-sed -i '' s%/Sid/vsaveliev/RIA_0017/rnaseq_1_0_2a/input/%../input/%g config/rnaseq_1_0_2a.yaml
-rm -rf final/*/sailfish
-head -n 100 final/2017-02-28_rnaseq_1_0_2a/combined.sf > final/2017-02-28_rnaseq_1_0_2a/combined.sf2 && mv final/2017-02-28_rnaseq_1_0_2a/combined.sf2 final/2017-02-28_rnaseq_1_0_2a/combined.sf
+if [ -z "$1" ]; then
+	echo "Usage: bash $0 name_of_bcbio_project"
+else
+	BASEDIR=$1  # BASEDIR=rnaseq_hg19_star
+	mv $BASEDIR $BASEDIR.bak
+	rsync -tavz --exclude "work" chi:/Sid/vsaveliev/bcbio_tests_rna/$BASEDIR/ $BASEDIR
+	cd $BASEDIR
+	sed -i '' s%/Sid/vsaveliev/bcbio_tests_rna/$BASEDIR/input/%../input/%g config/$BASEDIR.yaml
+	rm -rf final/*/sailfish/*
+	head -n 100 final/2017-02-28_$BASEDIR/combined.sf > final/2017-02-28_$BASEDIR/combined.sf2 && \
+	         mv final/2017-02-28_$BASEDIR/combined.sf2 final/2017-02-28_$BASEDIR/combined.sf
 
-echo ""
-echo "To compare:"
-echo "diff -r --brief $BASEDIR $BASEDIR.bak"
+	echo ""
+	echo "To compare:"
+	echo "diff -r --brief $BASEDIR $BASEDIR.bak"
+fi

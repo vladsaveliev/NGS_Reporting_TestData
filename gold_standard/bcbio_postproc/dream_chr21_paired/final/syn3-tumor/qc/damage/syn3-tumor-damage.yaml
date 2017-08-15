@@ -1,0 +1,10 @@
+changes:
+  total bias: 0
+  total damage: 0
+depths:
+  bias: {}
+  damage: {}
+  pass:
+    0: 13
+    3: 1
+sample: syn3-tumor

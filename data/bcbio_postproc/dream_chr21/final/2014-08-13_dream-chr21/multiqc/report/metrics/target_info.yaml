@@ -1,6 +1,0 @@
-coverage_bed_info: {bed: /Sid/vsaveliev/dream-chr21/work/bedprep/cov-NGv3.chr21.4col.bed,
-  genes: 280, regions: 2232, size: 1678843}
-coverage_interval: regional
-genome_info: {name: hg19, size: 3137161264}
-variants_regions_info: {bed: /Sid/vsaveliev/dream-chr21/input/NGv3.chr21.4col.bed,
-  genes: 280, regions: 2232, size: 1678843}

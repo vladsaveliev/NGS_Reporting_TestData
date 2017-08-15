@@ -1,0 +1,3 @@
+syn3-normal	9337
+syn3-normal-germline	9337
+syn3-tumor	8942

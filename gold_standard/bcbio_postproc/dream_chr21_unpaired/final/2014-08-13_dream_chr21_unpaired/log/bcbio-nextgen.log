@@ -1,0 +1,325 @@
+[2017-08-12T19:47Z] System YAML configuration: /home/vsaveliev/bcbio/galaxy/bcbio_system.yaml
+[2017-08-12T19:47Z] Timing: organize samples
+[2017-08-12T19:47Z] multiprocessing: organize_samples
+[2017-08-12T19:47Z] Using input YAML configuration: /Sid/vsaveliev/dream_chr21_unpaired/config/dream_chr21_unpaired.yaml
+[2017-08-12T19:47Z] Checking sample YAML configuration: /Sid/vsaveliev/dream_chr21_unpaired/config/dream_chr21_unpaired.yaml
+[2017-08-12T19:47Z] Testing minimum versions of installed programs
+[2017-08-12T19:47Z] Timing: alignment preparation
+[2017-08-12T19:47Z] multiprocessing: prep_align_inputs
+[2017-08-12T19:47Z] multiprocessing: trim_sample
+[2017-08-12T19:47Z] Skipping trimming of syn3-normal.
+[2017-08-12T19:47Z] Skipping trimming of syn3-tumor.
+[2017-08-12T19:47Z] multiprocessing: prep_align_inputs
+[2017-08-12T19:47Z] multiprocessing: disambiguate_split
+[2017-08-12T19:47Z] Timing: alignment
+[2017-08-12T19:47Z] multiprocessing: process_alignment
+[2017-08-12T19:48Z] Timing: callable regions
+[2017-08-12T19:48Z] multiprocessing: prep_samples
+[2017-08-12T19:48Z] multiprocessing: postprocess_alignment
+[2017-08-12T19:49Z] syn3-normal: Assigned coverage as 'regional' with 0.1% genome coverage and 19.3% offtarget coverage
+[2017-08-12T19:50Z] syn3-tumor: Assigned coverage as 'regional' with 0.1% genome coverage and 19.5% offtarget coverage
+[2017-08-12T19:50Z] multiprocessing: combine_sample_regions
+[2017-08-12T19:50Z] Identified 4 parallel analysis blocks
+Block sizes:
+  min: 810671
+  5%: 3042390.95
+  25%: 11969270.75
+  median: 15709261.5
+  75%: 15759711.5
+  95%: 15831693.5
+  99%: 15846089.9
+  max: 15849689
+Between block sizes:
+  min: 751
+  5%: 945.5
+  25%: 1723.5
+  median: 2696.0
+  75%: 25130.5
+  95%: 43078.1
+  99%: 46667.62
+  max: 47565
+
+[2017-08-12T19:50Z] Timing: hla typing
+[2017-08-12T19:50Z] Timing: alignment post-processing
+[2017-08-12T19:50Z] multiprocessing: piped_bamprep
+[2017-08-12T19:50Z] Timing: variant calling
+[2017-08-12T19:50Z] multiprocessing: variantcall_sample
+[2017-08-12T19:57Z] multiprocessing: concat_variant_files
+[2017-08-12T19:57Z] Timing: joint squaring off/backfilling
+[2017-08-12T19:57Z] Timing: variant post-processing
+[2017-08-12T19:57Z] multiprocessing: postprocess_variants
+[2017-08-12T19:57Z] Finalizing variant calls: syn3-normal, freebayes
+[2017-08-12T19:57Z] Calculating variation effects for syn3-normal, freebayes
+[2017-08-12T19:58Z] Annotate VCF file: syn3-normal, freebayes
+[2017-08-12T19:58Z] Filtering for syn3-normal, freebayes
+[2017-08-12T19:58Z] Prioritization for syn3-normal, freebayes
+[2017-08-12T19:58Z] Germline extraction for syn3-normal, freebayes
+[2017-08-12T19:58Z] Finalizing variant calls: syn3-tumor, freebayes
+[2017-08-12T19:58Z] Calculating variation effects for syn3-tumor, freebayes
+[2017-08-12T19:59Z] Annotate VCF file: syn3-tumor, freebayes
+[2017-08-12T19:59Z] Filtering for syn3-tumor, freebayes
+[2017-08-12T19:59Z] Prioritization for syn3-tumor, freebayes
+[2017-08-12T19:59Z] Germline extraction for syn3-tumor, freebayes
+[2017-08-12T19:59Z] multiprocessing: split_variants_by_sample
+[2017-08-12T19:59Z] Timing: prepped BAM merging
+[2017-08-12T19:59Z] Timing: validation
+[2017-08-12T19:59Z] multiprocessing: compare_to_rm
+[2017-08-12T19:59Z] Timing: ensemble calling
+[2017-08-12T19:59Z] Timing: validation summary
+[2017-08-12T19:59Z] Timing: structural variation precall
+[2017-08-12T19:59Z] multiprocessing: detect_sv
+[2017-08-12T19:59Z] multiprocessing: finalize_sv
+[2017-08-12T19:59Z] Timing: structural variation
+[2017-08-12T19:59Z] Timing: structural variation
+[2017-08-12T19:59Z] multiprocessing: detect_sv
+[2017-08-12T20:01Z] Bin size estimate failed, using default values
+[2017-08-12T20:08Z] Bin size estimate failed, using default values
+[2017-08-12T20:13Z] multiprocessing: finalize_sv
+[2017-08-12T20:13Z] Timing: structural variation ensemble
+[2017-08-12T20:13Z] multiprocessing: detect_sv
+[2017-08-12T20:13Z] multiprocessing: finalize_sv
+[2017-08-12T20:13Z] Timing: structural variation validation
+[2017-08-12T20:13Z] multiprocessing: validate_sv
+[2017-08-12T20:13Z] Timing: heterogeneity
+[2017-08-12T20:13Z] Timing: population database
+[2017-08-12T20:13Z] Timing: quality control
+[2017-08-12T20:13Z] multiprocessing: pipeline_summary
+[2017-08-12T20:13Z] QC: syn3-normal fastqc
+[2017-08-12T20:13Z] Produced HTML report /Sid/vsaveliev/dream_chr21_unpaired/work/qc/syn3-normal/fastqc/fastqc_report.html
+[2017-08-12T20:13Z] QC: syn3-normal qualimap
+[2017-08-12T20:13Z] Full qualimap analysis for /Sid/vsaveliev/dream_chr21_unpaired/work/prealign/syn3-normal/syn3-normal-dedup.bam may be slow.
+[2017-08-12T20:14Z] QC: syn3-normal samtools
+[2017-08-12T20:14Z] QC: syn3-normal qsignature
+[2017-08-12T20:14Z] QC: syn3-normal coverage
+[2017-08-12T20:15Z] QC: syn3-normal variants
+[2017-08-12T20:15Z] QC: syn3-normal picard
+[2017-08-12T20:15Z] QC: syn3-tumor fastqc
+[2017-08-12T20:15Z] Produced HTML report /Sid/vsaveliev/dream_chr21_unpaired/work/qc/syn3-tumor/fastqc/fastqc_report.html
+[2017-08-12T20:15Z] QC: syn3-tumor qualimap
+[2017-08-12T20:15Z] Full qualimap analysis for /Sid/vsaveliev/dream_chr21_unpaired/work/prealign/syn3-tumor/syn3-tumor-dedup.bam may be slow.
+[2017-08-12T20:16Z] QC: syn3-tumor samtools
+[2017-08-12T20:16Z] QC: syn3-tumor qsignature
+[2017-08-12T20:16Z] QC: syn3-tumor coverage
+[2017-08-12T20:17Z] QC: syn3-tumor variants
+[2017-08-12T20:17Z] QC: syn3-tumor picard
+[2017-08-12T20:17Z] multiprocessing: qsignature_summary
+[2017-08-12T20:17Z] multiprocessing: multiqc_summary
+[2017-08-12T20:17Z] copy qsignature
+[2017-08-12T20:17Z] summarize fastqc
+[2017-08-12T20:17Z] summarize target information
+[2017-08-12T20:17Z] summarize coverage
+[2017-08-12T20:17Z] summarize variants
+[2017-08-12T20:17Z] summarize metrics
+[2017-08-12T20:17Z] Timing: archive
+[2017-08-12T20:17Z] Timing: upload
+[2017-08-12T20:17Z] multiprocessing: upload_samples
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/fastqc_report.html
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/fastqc_data.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/syn3-tumor.zip
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/Per_base_sequence_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/Per_base_N_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/samtools/syn3-tumor.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/genome_results.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/qualimapReport.html
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/agogo.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/ajax-loader.gif
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/basic.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/bgfooter.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/bgtop.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/comment-bright.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/comment-close.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/comment.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/doctools.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/down.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/down-pressed.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/file.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/jquery.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/minus.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/plus.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/pygments.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/qualimap_logo_small.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/report.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/searchtools.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/underscore.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/up.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/up-pressed.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/css/websupport.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/coverage_across_reference.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/coverage_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/genome_fraction_coverage.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/duplication_rate_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/mapped_reads_nucleotide_content.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/mapped_reads_gc-content_distribution.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/mapped_reads_clipping_profile.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/homopolymer_indels.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/mapping_quality_across_reference.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/mapping_quality_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/insert_size_across_reference.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport/insert_size_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_coverage_across_reference.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_coverage_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_coverage_0to50_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_coverage_quotes.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_uniq_read_starts_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_reads_content_per_read_position.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_gc_content_per_window.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_reads_clipping_profile.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_homopolymer_indels.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_mapping_quality_across_reference.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_mapping_quality_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_insert_size_across_reference.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/images_qualimapReport/genome_insert_size_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/variants/syn3-tumor_bcftools_stats.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/variants/syn3-tumor.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/coverage/syn3-tumor_bcbio_coverage.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/coverage/syn3-tumor_bcbio_coverage_avg.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/coverage/syn3-tumor_coverage.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/coverage/syn3-tumor_coverage_total_summary.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/qc/coverage/syn3-tumor_coverage_summary.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-ready.bam
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-ready.bam.bai
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-freebayes.vcf.gz
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-freebayes.vcf.gz.tbi
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-freebayes-effects-stats-csv.csv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-freebayes-effects-stats.html
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-seq2c-coverage.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-seq2c.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-seq2c.vcf.gz
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-seq2c.vcf.gz.tbi
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit.vcf
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit.cnr
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit.cns
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit-gainloss.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit-segmetrics.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit-call.cns
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-cnvkit-priority.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-sv-prioritize.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-sv-prioritize-seq2c.vcf.gz
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-sv-prioritize-cnvkit.vcf.gz
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/fastqc_report.html
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/fastqc_data.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/syn3-normal.zip
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/Per_base_sequence_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/Per_base_N_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/samtools/syn3-normal.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/genome_results.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/qualimapReport.html
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/agogo.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/ajax-loader.gif
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/basic.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/bgfooter.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/bgtop.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/comment-bright.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/comment-close.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/comment.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/doctools.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/down.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/down-pressed.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/file.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/jquery.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/minus.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/plus.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/pygments.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/qualimap_logo_small.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/report.css
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/searchtools.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/underscore.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/up.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/up-pressed.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/css/websupport.js
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/coverage_across_reference.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/coverage_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/genome_fraction_coverage.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/duplication_rate_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/mapped_reads_nucleotide_content.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/mapped_reads_gc-content_distribution.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/mapped_reads_clipping_profile.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/homopolymer_indels.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/mapping_quality_across_reference.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/mapping_quality_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/insert_size_across_reference.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport/insert_size_histogram.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_coverage_across_reference.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_coverage_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_coverage_0to50_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_coverage_quotes.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_uniq_read_starts_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_reads_content_per_read_position.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_gc_content_per_window.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_reads_clipping_profile.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_homopolymer_indels.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_mapping_quality_across_reference.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_mapping_quality_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_insert_size_across_reference.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/images_qualimapReport/genome_insert_size_histogram.png
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/variants/syn3-normal_bcftools_stats.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/variants/syn3-normal.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/coverage/syn3-normal_bcbio_coverage.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/coverage/syn3-normal_bcbio_coverage_avg.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/coverage/syn3-normal_coverage.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/coverage/syn3-normal_coverage_total_summary.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/qc/coverage/syn3-normal_coverage_summary.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-ready.bam
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-ready.bam.bai
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-freebayes.vcf.gz
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-freebayes.vcf.gz.tbi
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-freebayes-effects-stats-csv.csv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-freebayes-effects-stats.html
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-seq2c-coverage.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-seq2c.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-seq2c.vcf.gz
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-seq2c.vcf.gz.tbi
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit.vcf
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit.cnr
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit.cns
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit-gainloss.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit-segmetrics.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit.bed
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit-call.cns
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-cnvkit-priority.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-sv-prioritize.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-sv-prioritize-seq2c.vcf.gz
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/syn3-normal/syn3-normal-sv-prioritize-cnvkit.vcf.gz
+[2017-08-12T20:17Z] multiprocessing: upload_samples_project
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/programs.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/data_versions.csv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/bcbio-nextgen.log
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/bcbio-nextgen-commands.log
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/project-summary.yaml
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_report.html
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/seqbuster_isomirs.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/multiqc_general_stats.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/multiqc_fastqc.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/seqbuster_mirs.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/multiqc_snpeff.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/multiqc_sources.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/multiqc_samtools_stats.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/multiqc_bcftools_stats.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/multiqc_data/multiqc_bcbio_metrics.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/metrics/syn3-normal_bcbio.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/metrics/syn3-tumor_bcbio.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/fastqc/Sequence_Duplication_Levels.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/fastqc/Per_sequence_quality_scores.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/fastqc/Per_base_sequence_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/fastqc/Per_base_sequence_quality.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/fastqc/Sequence_Length_Distribution.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/fastqc/Per_sequence_GC_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/fastqc/Per_base_N_content.tsv
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/metrics/target_info.yaml
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/report-ready.Rmd
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/report/qc-coverage-report-run.R
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/list_files.txt
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc/list_files_final.txt
+[2017-08-12T20:17Z] multiprocessing: upload_samples_project
+[2017-08-12T20:17Z] Storing in local filesystem: /Sid/vsaveliev/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/bcbio-nextgen.log

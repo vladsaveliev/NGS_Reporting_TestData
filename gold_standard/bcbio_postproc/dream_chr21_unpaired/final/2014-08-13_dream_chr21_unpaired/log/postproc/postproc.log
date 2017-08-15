@@ -1,0 +1,786 @@
+2017-08-15 15:13:40  NGS Reporting v.2.3.18, git revision 227102e
+2017-08-15 15:13:40  Vladislavs-MacBook-Air.local
+2017-08-15 15:13:40  Login: vladsaveliev   			Name: Vlad Saveliev
+2017-08-15 15:13:40  
+2017-08-15 15:13:40  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bcbio_postproc /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired --eval-panel -d -t 1
+2017-08-15 15:13:40  
+2017-08-15 15:13:40  ----------------------------------------------------------------------
+2017-08-15 15:13:40  [DEBUG] System config: path ngs.q is relative, however can't expand relatively to base dir of the system yaml /Users/vladsaveliev/vagrant/NGS_Reporting/az/configs, or current working directory /Users/vladsaveliev/vagrant/NGS_Reporting_TestData. Keeping the value as is (probably not a path at all?).
+2017-08-15 15:13:40  [DEBUG] System config: path sge is relative, however can't expand relatively to base dir of the system yaml /Users/vladsaveliev/vagrant/NGS_Reporting/az/configs, or current working directory /Users/vladsaveliev/vagrant/NGS_Reporting_TestData. Keeping the value as is (probably not a path at all?).
+2017-08-15 15:13:40  Neither min freq not filt config was provided, using settings for exome
+2017-08-15 15:13:40  Loading bcbio project from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired
+2017-08-15 15:13:40  ----------------------------------------------------------------------
+2017-08-15 15:13:40  Bcbio project directory: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired
+2017-08-15 15:13:41  Using bcbio YAML config /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/config/dream_chr21_unpaired.yaml
+2017-08-15 15:13:41  [DEBUG] Reading sample details...
+2017-08-15 15:13:41  Coverage interval: regional
+2017-08-15 15:13:41  [DEBUG] Done loading bcbio project bcbio_postproc_dream_chr21_unpaired
+2017-08-15 15:13:41  Loaded /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final
+2017-08-15 15:13:41  Filtering config: min_allele_fraction=0.01 which is higher than 0.005, setting config for exome
+2017-08-15 15:13:41  
+2017-08-15 15:13:41  ----------------------------------------------------------------------
+2017-08-15 15:13:41  Starting post-processing bcbio project bcbio_postproc_dream_chr21_unpaired
+2017-08-15 15:13:41  ----------------------------------------------------------------------
+2017-08-15 15:13:41  [DEBUG] Logging to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/postproc/postproc.log
+2017-08-15 15:13:41  [DEBUG] 
+2017-08-15 15:13:41  [DEBUG] Remove incorrect lines in BED...
+2017-08-15 15:13:41  [DEBUG] Saved clean BED file into /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.bed
+2017-08-15 15:13:41  [DEBUG] Sorting BED...
+2017-08-15 15:13:41  [DEBUG] Sorting regions in /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.bed
+2017-08-15 15:13:41  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:13:41  [DEBUG] Sorted 2232 regions, saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.bed
+2017-08-15 15:13:41  [DEBUG] Done cleaning BED: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.bed
+2017-08-15 15:13:41  [DEBUG] Seq2C bed: removing regions with no gene annotation
+2017-08-15 15:13:41  [DEBUG] Writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.filt.bed
+2017-08-15 15:13:41  [DEBUG] Written lines: 2055
+2017-08-15 15:13:41  [DEBUG] Saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.filt.bed
+2017-08-15 15:13:41  [DEBUG] Remove incorrect lines in BED...
+2017-08-15 15:13:41  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.bed
+2017-08-15 15:13:41  [DEBUG] Sorting BED...
+2017-08-15 15:13:41  [DEBUG] Sorting regions in /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.bed
+2017-08-15 15:13:41  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.bed
+2017-08-15 15:13:41  [DEBUG] /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.bed exists, reusing
+2017-08-15 15:13:41  [DEBUG] Done cleaning BED: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.bed
+2017-08-15 15:13:41  [DEBUG] Running locally using 1 thread(s)
+2017-08-15 15:13:41  
+2017-08-15 15:13:41  **********************************************************************
+2017-08-15 15:13:41  Analysing genomic variation
+2017-08-15 15:13:41  **********************************************************************
+2017-08-15 15:13:41  Processing CNV...
+2017-08-15 15:13:41  [DEBUG] BED is compressed, creating BedTool
+2017-08-15 15:14:56  [DEBUG] Writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/cnvkit.filt.tsv
+2017-08-15 15:14:56  [DEBUG] Written lines: 1
+2017-08-15 15:14:56  [DEBUG] Saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/cnvkit.filt.tsv
+2017-08-15 15:14:56  [DEBUG] CNVkit filtering: filtered from 0 down to 0
+2017-08-15 15:14:56  [DEBUG] Seq2C: calculating read counts
+2017-08-15 15:14:56  [DEBUG] Starting multithreaded function<function number_mapped_reads_on_target at 0x107ed16a8>
+2017-08-15 15:14:56  /Users/vlad/miniconda3/envs/ngs_reporting/bin/sambamba index /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/syn3-normal-ready.bam
+2017-08-15 15:14:56  /Users/vlad/miniconda3/envs/ngs_reporting/bin/sambamba view -c -F "not unmapped" /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/syn3-normal-ready.bam -L /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.filt.bed > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/syn3-normal-ready.bam_num_not_unmapped_on_target_NGv3.chr21.4col.clean.sorted.filt.bed.tx
+2017-08-15 15:14:56  /Users/vlad/miniconda3/envs/ngs_reporting/bin/sambamba index /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-ready.bam
+2017-08-15 15:14:56  /Users/vlad/miniconda3/envs/ngs_reporting/bin/sambamba view -c -F "not unmapped" /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-ready.bam -L /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/coverage_bed/NGv3.chr21.4col.clean.sorted.filt.bed > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/syn3-tumor-ready.bam_num_not_unmapped_on_target_NGv3.chr21.4col.clean.sorted.filt.bed.tx
+2017-08-15 15:14:56  [DEBUG] Seq2C: writing read counts into /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/seq2c_mapping_reads.txt
+2017-08-15 15:14:56  [DEBUG] Seq2C: combine coverages
+2017-08-15 15:14:56  [DEBUG] Seq2C: combine calls
+2017-08-15 15:14:56  [DEBUG] Writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/seq2c.filt.tsv
+2017-08-15 15:14:56  [DEBUG] Written lines: 457
+2017-08-15 15:14:56  [DEBUG] Saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/seq2c.filt.tsv
+2017-08-15 15:14:56  [DEBUG] Seq2C filtering: filtered from 280 down to 228
+2017-08-15 15:14:56  Processing variants for variant caller freebayes
+2017-08-15 15:14:56  [DEBUG] Not found annotated VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found annotated VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found uncompressed VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:14:56  [DEBUG] Not found uncompressed VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:14:56  [DEBUG] Not found VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found uncompressed VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:14:56  Found VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/syn3-normal-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found annotated VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found annotated VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found uncompressed VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:14:56  [DEBUG] Not found uncompressed VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:14:56  [DEBUG] Not found VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] Not found uncompressed VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:14:56  Found VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-freebayes.vcf.gz
+2017-08-15 15:14:56  [DEBUG] 
+2017-08-15 15:14:56  Annotating variants...
+2017-08-15 15:14:56  [DEBUG] Starting multithreaded function<function annotate_fn at 0x1101f69d8>
+2017-08-15 15:14:57  [DEBUG] Not found annotated VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:14:57  [DEBUG] Not found annotated VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:14:57  [DEBUG] Not found VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:14:57  [DEBUG] Not found VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:14:57  [DEBUG] Not found uncompressed VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:14:57  [DEBUG] Not found uncompressed VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:14:57  [DEBUG] Not found VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:14:57  [DEBUG] Not found uncompressed VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:14:57  Warning: no VCF found for batch syn3-normal-batch, freebayes, gzip or uncompressed version in the datestamp directory.
+2017-08-15 15:14:57  [DEBUG] -
+2017-08-15 15:14:57  [DEBUG] Not found VCF in the datestamp dir, looking at the sample-level dir
+2017-08-15 15:14:57  [DEBUG] -
+2017-08-15 15:14:57  Found VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/syn3-normal-freebayes.vcf.gz
+2017-08-15 15:14:57  [DEBUG] Removing rejected records...
+2017-08-15 15:14:57  [DEBUG] output_fpath is .gz, but writing to uncompressed.
+2017-08-15 15:14:57  [DEBUG] Writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.vcf
+2017-08-15 15:14:57  [DEBUG] Written lines: 3080
+2017-08-15 15:14:57  [DEBUG] Saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.vcf
+2017-08-15 15:14:57  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.vcf.gz(.tbi)
+2017-08-15 15:14:57  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.vcf.gz
+2017-08-15 15:14:57  [DEBUG] BGzipping file
+2017-08-15 15:14:57  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.vcf
+2017-08-15 15:14:57  [DEBUG] Tabixing file
+2017-08-15 15:14:57  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.vcf.gz
+2017-08-15 15:14:57  Needs annotation, running vcfanno
+2017-08-15 15:14:57  vcfanno -p 1 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/vcfanno.toml /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.vcf.gz > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.anno.vcf.tx
+2017-08-15 15:14:57    
+2017-08-15 15:14:57    =============================================
+2017-08-15 15:14:57    vcfanno version 0.2.7-beta3 [built with go1.8]
+2017-08-15 15:14:57    
+2017-08-15 15:14:57    see: https://github.com/brentp/vcfanno
+2017-08-15 15:14:57    =============================================
+2017-08-15 15:14:57    vcfanno.go:115: found 10 sources from 3 files
+2017-08-15 15:14:57    vcfanno.go:187: Info Error: cosmic_id not found in INFO >> this error/warning may occur many times. reporting once here...
+2017-08-15 15:14:58    vcfanno.go:187: Info Error: CAF not found in INFO >> this error/warning may occur many times. reporting once here...
+2017-08-15 15:14:58    vcfanno.go:187: Info Error: ID not found in header >> this error/warning may occur many times. reporting once here...
+2017-08-15 15:15:02    vcfanno.go:241: annotated 2899 variants in 4.37 seconds (663.3 / second)
+2017-08-15 15:15:02  Moving final VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-normal/syn3-normal-freebayes.clean.anno.vcf to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf
+2017-08-15 15:15:02  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz(.tbi)
+2017-08-15 15:15:02  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz
+2017-08-15 15:15:02  [DEBUG] BGzipping file
+2017-08-15 15:15:02  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf
+2017-08-15 15:15:02  [DEBUG] Tabixing file
+2017-08-15 15:15:02  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz
+2017-08-15 15:15:02  Compressing and indexing with bgzip+tabix /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf
+2017-08-15 15:15:02  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz.tbi
+2017-08-15 15:15:02  [DEBUG] Actual compressed file and index exist, reusing
+2017-08-15 15:15:02  Saved VCF again to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Not found annotated VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Not found annotated VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Not found VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Not found VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Not found uncompressed VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:15:02  [DEBUG] Not found uncompressed VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:15:02  [DEBUG] Not found VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Not found uncompressed VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:15:02  Warning: no VCF found for batch syn3-tumor-batch, freebayes, gzip or uncompressed version in the datestamp directory.
+2017-08-15 15:15:02  [DEBUG] -
+2017-08-15 15:15:02  [DEBUG] Not found VCF in the datestamp dir, looking at the sample-level dir
+2017-08-15 15:15:02  [DEBUG] -
+2017-08-15 15:15:02  Found VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-freebayes.vcf.gz
+2017-08-15 15:15:02  [DEBUG] Removing rejected records...
+2017-08-15 15:15:02  [DEBUG] output_fpath is .gz, but writing to uncompressed.
+2017-08-15 15:15:02  [DEBUG] Writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.vcf
+2017-08-15 15:15:03  [DEBUG] Written lines: 3116
+2017-08-15 15:15:03  [DEBUG] Saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.vcf
+2017-08-15 15:15:03  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.vcf.gz(.tbi)
+2017-08-15 15:15:03  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.vcf.gz
+2017-08-15 15:15:03  [DEBUG] BGzipping file
+2017-08-15 15:15:03  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.vcf
+2017-08-15 15:15:03  [DEBUG] Tabixing file
+2017-08-15 15:15:03  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.vcf.gz
+2017-08-15 15:15:03  Needs annotation, running vcfanno
+2017-08-15 15:15:03  vcfanno -p 1 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/vcfanno.toml /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.vcf.gz > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.anno.vcf.tx
+2017-08-15 15:15:03    
+2017-08-15 15:15:03    =============================================
+2017-08-15 15:15:03    vcfanno version 0.2.7-beta3 [built with go1.8]
+2017-08-15 15:15:03    
+2017-08-15 15:15:03    see: https://github.com/brentp/vcfanno
+2017-08-15 15:15:03    =============================================
+2017-08-15 15:15:03    vcfanno.go:115: found 10 sources from 3 files
+2017-08-15 15:15:03    vcfanno.go:187: Info Error: CAF not found in INFO >> this error/warning may occur many times. reporting once here...
+2017-08-15 15:15:03    vcfanno.go:187: Info Error: cosmic_id not found in INFO >> this error/warning may occur many times. reporting once here...
+2017-08-15 15:15:03    vcfanno.go:187: Info Error: ID not found in header >> this error/warning may occur many times. reporting once here...
+2017-08-15 15:15:05    vcfanno.go:187: Info Error: rs_id not found in INFO >> this error/warning may occur many times. reporting once here...
+2017-08-15 15:15:07    vcfanno.go:241: annotated 2935 variants in 4.10 seconds (716.5 / second)
+2017-08-15 15:15:07  Moving final VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varAnnotate/syn3-tumor/syn3-tumor-freebayes.clean.anno.vcf to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf
+2017-08-15 15:15:07  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz(.tbi)
+2017-08-15 15:15:07  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz
+2017-08-15 15:15:07  [DEBUG] BGzipping file
+2017-08-15 15:15:07  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf
+2017-08-15 15:15:07  [DEBUG] Tabixing file
+2017-08-15 15:15:07  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz
+2017-08-15 15:15:07  Compressing and indexing with bgzip+tabix /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf
+2017-08-15 15:15:07  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz
+2017-08-15 15:15:08  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz.tbi
+2017-08-15 15:15:08  [DEBUG] Actual compressed file and index exist, reusing
+2017-08-15 15:15:08  Saved VCF again to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz
+2017-08-15 15:15:08  [DEBUG] 
+2017-08-15 15:15:08  Filtering variants...
+2017-08-15 15:15:08  [DEBUG] Starting multithreaded function<function filtering_fn at 0x1101f6a60>
+2017-08-15 15:15:08  [DEBUG] Running VarDict vcf2txt...
+2017-08-15 15:15:08  perl /Users/vladsaveliev/vagrant/NGS_Reporting/variant_filtering/vcf2txt.pl -r 1.0 -R 1.0 -P 0 -Q 0 -D 3 -V 3 -f 0.025 -p 5 -q 23 -M 10 -o 1.5 -C LOF:DKFZBias -A /Users/vladsaveliev/googledrive/az/reference_data/genomes/Hsapiens/hg19/variation/dbSNP_multi_mafs_v147.txt.gz /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.txt.tx
+2017-08-15 15:15:15    First round, reading 1 files, collecting statistics...
+2017-08-15 15:15:15    1/1 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz
+2017-08-15 15:15:16    
+2017-08-15 15:15:16    Second round, reading 1 files, filtering variants...
+2017-08-15 15:15:16    1/1 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varAnnotate/syn3-normal-freebayes.anno.vcf.gz
+2017-08-15 15:15:16    Done.
+2017-08-15 15:15:16  Unfiltered variants: saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.txt
+2017-08-15 15:15:17  [DEBUG] 
+2017-08-15 15:15:17  [DEBUG] Running vardict2mut...
+2017-08-15 15:15:17  /Users/vlad/miniconda3/envs/ngs_reporting/bin/vardict2mut /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.txt  --filt-cnf /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-normal/run_info.yaml --work-dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-normal --genome hg19 -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt.tx --o-reject /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:18    /Users/vlad/miniconda3/envs/ngs_reporting/bin/vardict2mut /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.txt --filt-cnf /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-normal/run_info.yaml --work-dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-normal --genome hg19 -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt.tx --o-reject /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:18    
+2017-08-15 15:15:18    Vladislavs-MacBook-Air.local
+2017-08-15 15:15:18    Login: vladsaveliev   			Name: Vlad Saveliev
+2017-08-15 15:15:18    
+2017-08-15 15:15:18    /Users/vlad/miniconda3/envs/ngs_reporting/bin/vardict2mut /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.txt --filt-cnf /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-normal/run_info.yaml --work-dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-normal --genome hg19 -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt.tx --o-reject /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:18    
+2017-08-15 15:15:18    ----------------------------------------------------------------------
+2017-08-15 15:15:18    Writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt.tx
+2017-08-15 15:15:18    Writing rejected mutations to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:18    Using canonical transcripts from /Users/vladsaveliev/vagrant/NGS_Reporting/ngs_reporting/reference_data/canonical_transcripts/ensembl/cancer_transcripts_hg19.txt
+2017-08-15 15:15:18    Parsing filtering data...
+2017-08-15 15:15:18    Parsing gene blacklists...
+2017-08-15 15:15:18    Parsing region blacklists...
+2017-08-15 15:15:19    Parsing actionable rules and specific mutations...
+2017-08-15 15:15:19    
+2017-08-15 15:15:19    ----------------------------------------------------------------------
+2017-08-15 15:15:19    Running filtering...
+2017-08-15 15:15:20    Done.
+2017-08-15 15:15:20    All statistics:
+2017-08-15 15:15:20        Written 8 lines
+2017-08-15 15:15:20        Set known: 0
+2017-08-15 15:15:20        Set likely: 4
+2017-08-15 15:15:20        Kept unknown: 4
+2017-08-15 15:15:20        Dropped: 4167
+2017-08-15 15:15:20            449 clnsig dbSNP
+2017-08-15 15:15:20            5 no_gene
+2017-08-15 15:15:20            3610 not act and all GMAF > 0.0025
+2017-08-15 15:15:20            11 not known and blacklist gene
+2017-08-15 15:15:20            20 not known and intronic
+2017-08-15 15:15:20            4 Olfactory gene
+2017-08-15 15:15:20            7 snp in snpeffect_export_polymorphic
+2017-08-15 15:15:20            7 not act and upstream
+2017-08-15 15:15:20            6 not act and downstream
+2017-08-15 15:15:20  Passed mutations: saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:20  [DEBUG] 
+2017-08-15 15:15:20  [DEBUG] 
+2017-08-15 15:15:20  [DEBUG] Writing final filtered VCF files...
+2017-08-15 15:15:20  Parsing PASS and REJECT mutations...
+2017-08-15 15:15:20  [DEBUG] Preparing mutations stats
+2017-08-15 15:15:20  [DEBUG] Checking /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:20  [DEBUG] Reading mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:20  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:20  [DEBUG] Found 8 mutations
+2017-08-15 15:15:20  [DEBUG]     0 in key genes
+2017-08-15 15:15:20  [DEBUG]     4 not unknown
+2017-08-15 15:15:20  [DEBUG] Preparing mutations stats
+2017-08-15 15:15:20  [DEBUG] Checking /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:20  [DEBUG] Reading mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:20  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:20  [DEBUG] Found 4167 mutations
+2017-08-15 15:15:20  [DEBUG]     23 in key genes
+2017-08-15 15:15:20  [DEBUG]     12 not unknown
+2017-08-15 15:15:20  Too many total mutations. Hiding non-key gene mutations from the report.
+2017-08-15 15:15:21  Writing filtered VCF...
+2017-08-15 15:15:29  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf.gz(.tbi)
+2017-08-15 15:15:29  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:29  [DEBUG] BGzipping file
+2017-08-15 15:15:29  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf
+2017-08-15 15:15:29  [DEBUG] Tabixing file
+2017-08-15 15:15:29  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:29  VCF file for syn3-normal is saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:29  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.PASS.vcf.gz(.tbi)
+2017-08-15 15:15:29  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:29  [DEBUG] BGzipping file
+2017-08-15 15:15:29  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.PASS.vcf
+2017-08-15 15:15:29  [DEBUG] Tabixing file
+2017-08-15 15:15:29  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:29  PASS VCF file for syn3-normal is saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:29  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:29  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf.gz.tbi
+2017-08-15 15:15:29  [DEBUG] Actual compressed file and index exist, reusing
+2017-08-15 15:15:29  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:29  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.PASS.vcf.gz.tbi
+2017-08-15 15:15:29  [DEBUG] Actual compressed file and index exist, reusing
+2017-08-15 15:15:29  [DEBUG] Preparing data for SolveBio
+2017-08-15 15:15:29  /Users/vlad/miniconda3/envs/ngs_reporting/bin/mut2solvebio /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.json.tx
+2017-08-15 15:15:30  Prepared variants for SolveBio: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.json
+2017-08-15 15:15:30  [DEBUG] Running VarDict vcf2txt...
+2017-08-15 15:15:31  perl /Users/vladsaveliev/vagrant/NGS_Reporting/variant_filtering/vcf2txt.pl -r 1.0 -R 1.0 -P 0 -Q 0 -D 3 -V 3 -f 0.025 -p 5 -q 23 -M 10 -o 1.5 -C LOF:DKFZBias -A /Users/vladsaveliev/googledrive/az/reference_data/genomes/Hsapiens/hg19/variation/dbSNP_multi_mafs_v147.txt.gz /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.txt.tx
+2017-08-15 15:15:39    First round, reading 1 files, collecting statistics...
+2017-08-15 15:15:39    1/1 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz
+2017-08-15 15:15:40    
+2017-08-15 15:15:40    Second round, reading 1 files, filtering variants...
+2017-08-15 15:15:40    1/1 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varAnnotate/syn3-tumor-freebayes.anno.vcf.gz
+2017-08-15 15:15:41    Done.
+2017-08-15 15:15:41  Unfiltered variants: saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.txt
+2017-08-15 15:15:41  [DEBUG] 
+2017-08-15 15:15:41  [DEBUG] Running vardict2mut...
+2017-08-15 15:15:41  /Users/vlad/miniconda3/envs/ngs_reporting/bin/vardict2mut /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.txt  --filt-cnf /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-tumor/run_info.yaml --work-dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-tumor --genome hg19 -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt.tx --o-reject /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:42    /Users/vlad/miniconda3/envs/ngs_reporting/bin/vardict2mut /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.txt --filt-cnf /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-tumor/run_info.yaml --work-dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-tumor --genome hg19 -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt.tx --o-reject /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:42    
+2017-08-15 15:15:42    Vladislavs-MacBook-Air.local
+2017-08-15 15:15:43    Login: vladsaveliev   			Name: Vlad Saveliev
+2017-08-15 15:15:43    
+2017-08-15 15:15:43    /Users/vlad/miniconda3/envs/ngs_reporting/bin/vardict2mut /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.txt --filt-cnf /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-tumor/run_info.yaml --work-dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/varFilter/syn3-tumor --genome hg19 -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt.tx --o-reject /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:43    
+2017-08-15 15:15:43    ----------------------------------------------------------------------
+2017-08-15 15:15:43    Writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt.tx
+2017-08-15 15:15:43    Writing rejected mutations to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:43    Using canonical transcripts from /Users/vladsaveliev/vagrant/NGS_Reporting/ngs_reporting/reference_data/canonical_transcripts/ensembl/cancer_transcripts_hg19.txt
+2017-08-15 15:15:43    Parsing filtering data...
+2017-08-15 15:15:43    Parsing gene blacklists...
+2017-08-15 15:15:43    Parsing region blacklists...
+2017-08-15 15:15:44    Parsing actionable rules and specific mutations...
+2017-08-15 15:15:44    
+2017-08-15 15:15:44    ----------------------------------------------------------------------
+2017-08-15 15:15:44    Running filtering...
+2017-08-15 15:15:44    Done.
+2017-08-15 15:15:44    All statistics:
+2017-08-15 15:15:44        Written 11 lines
+2017-08-15 15:15:44        Set known: 0
+2017-08-15 15:15:44        Set likely: 4
+2017-08-15 15:15:44        Kept unknown: 7
+2017-08-15 15:15:44        Dropped: 4219
+2017-08-15 15:15:44            466 clnsig dbSNP
+2017-08-15 15:15:44            6 no_gene
+2017-08-15 15:15:44            3633 not act and all GMAF > 0.0025
+2017-08-15 15:15:44            8 not known and blacklist gene
+2017-08-15 15:15:44            3 not known and in SnpEff SNP database
+2017-08-15 15:15:44            23 not known and intronic
+2017-08-15 15:15:44            4 Olfactory gene
+2017-08-15 15:15:44            7 snp in snpeffect_export_polymorphic
+2017-08-15 15:15:44            9 not act and upstream
+2017-08-15 15:15:44  Passed mutations: saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:44  [DEBUG] 
+2017-08-15 15:15:44  [DEBUG] 
+2017-08-15 15:15:44  [DEBUG] Writing final filtered VCF files...
+2017-08-15 15:15:44  Parsing PASS and REJECT mutations...
+2017-08-15 15:15:44  [DEBUG] Preparing mutations stats
+2017-08-15 15:15:44  [DEBUG] Checking /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:44  [DEBUG] Reading mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:44  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:44  [DEBUG] Found 11 mutations
+2017-08-15 15:15:44  [DEBUG]     0 in key genes
+2017-08-15 15:15:44  [DEBUG]     4 not unknown
+2017-08-15 15:15:44  [DEBUG] Preparing mutations stats
+2017-08-15 15:15:44  [DEBUG] Checking /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:44  [DEBUG] Reading mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.REJECT.txt
+2017-08-15 15:15:44  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:44  [DEBUG] Found 4219 mutations
+2017-08-15 15:15:44  [DEBUG]     25 in key genes
+2017-08-15 15:15:44  [DEBUG]     12 not unknown
+2017-08-15 15:15:44  Too many total mutations. Hiding non-key gene mutations from the report.
+2017-08-15 15:15:45  Writing filtered VCF...
+2017-08-15 15:15:51  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf.gz(.tbi)
+2017-08-15 15:15:51  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:51  [DEBUG] BGzipping file
+2017-08-15 15:15:51  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf
+2017-08-15 15:15:51  [DEBUG] Tabixing file
+2017-08-15 15:15:51  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:51  VCF file for syn3-tumor is saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:51  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.PASS.vcf.gz(.tbi)
+2017-08-15 15:15:51  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:51  [DEBUG] BGzipping file
+2017-08-15 15:15:51  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.PASS.vcf
+2017-08-15 15:15:51  [DEBUG] Tabixing file
+2017-08-15 15:15:51  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:51  PASS VCF file for syn3-tumor is saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:51  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf.gz
+2017-08-15 15:15:51  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf.gz.tbi
+2017-08-15 15:15:51  [DEBUG] Actual compressed file and index exist, reusing
+2017-08-15 15:15:51  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.PASS.vcf.gz
+2017-08-15 15:15:51  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.PASS.vcf.gz.tbi
+2017-08-15 15:15:51  [DEBUG] Actual compressed file and index exist, reusing
+2017-08-15 15:15:51  [DEBUG] Preparing data for SolveBio
+2017-08-15 15:15:51  /Users/vlad/miniconda3/envs/ngs_reporting/bin/mut2solvebio /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.json.tx
+2017-08-15 15:15:52  Prepared variants for SolveBio: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.json
+2017-08-15 15:15:52  [DEBUG] 
+2017-08-15 15:15:52  Combining resulting mutations and cohort-filtering
+2017-08-15 15:15:52  [DEBUG] 
+2017-08-15 15:15:52  [DEBUG] Combining PASSed mutations
+2017-08-15 15:15:52  [DEBUG] **********************************************************************
+2017-08-15 15:15:52  Max ratio set to 0.4
+2017-08-15 15:15:52  [DEBUG] Calculating frequences of variants in the cohort
+2017-08-15 15:15:52  [DEBUG] **********************************************************************
+2017-08-15 15:15:52  Counted 10 different variants in 2 samples with total 18 records
+2017-08-15 15:15:52  Duplicated varks for this sample: 1 out of total 19 records. Duplicated were not counted into cohort frequencies.
+2017-08-15 15:15:52  Maximum frequency in cohort is 1.0
+2017-08-15 15:15:52  [DEBUG] 
+2017-08-15 15:15:52  [DEBUG] Saving passing threshold if cohort freq < 0.4 to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.PASS.txt
+2017-08-15 15:15:52  [DEBUG] Skipped artefacts with cohort freq > 0.4 and sample count > 5: 0
+2017-08-15 15:15:52  [DEBUG] Added artefacts into /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.REJECT.txt
+2017-08-15 15:15:52  [DEBUG] All variants not under filtering: 8
+2017-08-15 15:15:52  [DEBUG] Written 19 records to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.PASS.txt
+2017-08-15 15:15:52  [DEBUG] Written 8386 rejected records to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.REJECT.txt
+2017-08-15 15:15:52  [DEBUG] Preparing data for SolveBio
+2017-08-15 15:15:52  /Users/vlad/miniconda3/envs/ngs_reporting/bin/mut2solvebio /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.json.tx
+2017-08-15 15:15:53  Prepared variants for SolveBio: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.json
+2017-08-15 15:15:53  [DEBUG] Reusing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.json
+2017-08-15 15:15:53  [DEBUG] Preparing data for SolveBio
+2017-08-15 15:15:53  /Users/vlad/miniconda3/envs/ngs_reporting/bin/mut2solvebio /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.PASS.txt > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.PASS.json.tx
+2017-08-15 15:15:54  Prepared variants for SolveBio: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.PASS.json
+2017-08-15 15:15:54  [DEBUG] 
+2017-08-15 15:15:54  [DEBUG] Symlinking final VCFs:
+2017-08-15 15:15:54  [DEBUG] 
+2017-08-15 15:15:54  [DEBUG] Combining final VCFs:
+2017-08-15 15:15:54  [DEBUG] freebayes: writing to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.vcf
+2017-08-15 15:15:54  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bcftools merge --force-samples  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/syn3-normal-freebayes.anno.filt.vcf.gz  /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/syn3-tumor-freebayes.anno.filt.vcf.gz  -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.vcf.tx
+2017-08-15 15:15:54    Incorrect number of AD fields (3) at chr21:11049225, cannot merge.
+2017-08-15 15:15:54  Cannot join VCFs, skipping
+2017-08-15 15:15:54  [DEBUG] 
+2017-08-15 15:15:54  Variants for all samples combined:
+2017-08-15 15:15:54       /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.txt, 8405 variants
+2017-08-15 15:15:54       /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/freebayes.PASS.txt, 19 variants
+2017-08-15 15:15:54  
+2017-08-15 15:15:54  For some samples and callers annotated VCFs could not be read:
+2017-08-15 15:15:54    For syn3-normal, VCF cannot be found
+2017-08-15 15:15:54    For syn3-tumor, VCF cannot be found
+2017-08-15 15:15:54  
+2017-08-15 15:15:54  **********************************************************************
+2017-08-15 15:15:54  Reporting
+2017-08-15 15:15:54  **********************************************************************
+2017-08-15 15:15:54  Creating call visualizations (linear and circos plots) for all samples...
+2017-08-15 15:15:54  Collecting data for linear plot
+2017-08-15 15:15:54  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:54  [DEBUG] Visualization: parsing CNV events from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/seq2c.filt.tsv
+2017-08-15 15:15:54  [DEBUG] Visualization: preparing coverage stats for syn3-normal
+2017-08-15 15:15:54  [DEBUG] Visualization: parsing coverage stats from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/coverage/syn3-normal_coverage.bed
+2017-08-15 15:15:54  [DEBUG] Visualization: preparing coverage stats for syn3-tumor
+2017-08-15 15:15:54  [DEBUG] Visualization: parsing coverage stats from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/coverage/syn3-tumor_coverage.bed
+2017-08-15 15:15:54  Processing data for linear plot
+2017-08-15 15:15:55  Writing the linear plot
+2017-08-15 15:15:55  [DEBUG] Embedding d3.min.js...
+2017-08-15 15:15:55  [DEBUG] Embedding d3.tip.js...
+2017-08-15 15:15:55  [DEBUG] Embedding circosJS.js...
+2017-08-15 15:15:55  [DEBUG] Embedding circosJS_utils.js...
+2017-08-15 15:15:55  [DEBUG] Embedding circosJS_load.js...
+2017-08-15 15:15:55  [DEBUG] Embedding queue.js...
+2017-08-15 15:15:55  [DEBUG] Embedding jquery-2.2.0.min.js...
+2017-08-15 15:15:55  [DEBUG] Embedding scripts/utils.js...
+2017-08-15 15:15:56  [DEBUG] Embedding circosJS.css...
+2017-08-15 15:15:56  [DEBUG] Embedding common.css...
+2017-08-15 15:15:56  [DEBUG] __write_html: work_dir=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports
+2017-08-15 15:15:56  [DEBUG] __write_html: html_fpath=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/call_vis.html
+2017-08-15 15:15:56  [DEBUG] __write_html: tx=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/call_vis.html.tx
+2017-08-15 15:15:56  [DEBUG] Linear plot is saved to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/call_vis.html
+2017-08-15 15:15:56  Building circos plot for samples
+2017-08-15 15:15:56  [DEBUG] Starting multithreaded function<function _proc_sample at 0x1101ecb70>
+2017-08-15 15:15:56  Preparing circos plot data for syn3-normal
+2017-08-15 15:15:56  Visualization: parsing prioritized SV from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/cnv/syn3-normal-sv-prioritize.tsv
+2017-08-15 15:15:56  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:56  Preparing circos plot data for syn3-tumor
+2017-08-15 15:15:56  Visualization: parsing prioritized SV from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/cnv/syn3-tumor-sv-prioritize.tsv
+2017-08-15 15:15:56  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:56  
+2017-08-15 15:15:56  Getting coordinates for key/target genes
+2017-08-15 15:15:56  gunzip -c /Users/vladsaveliev/vagrant/NGS_Reporting/ngs_reporting/reference_data/key_genes/az_key_genes_plus_cosmic_census.hg19.bed.gz > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/target_genes_cds.bed.tx
+2017-08-15 15:15:56  Building NGS reports...
+2017-08-15 15:15:57  [DEBUG] Starting multithreaded function<function _ngs_report_fn at 0x1101f6bf8>
+2017-08-15 15:15:57  [DEBUG] Not found annotated VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:15:57  [DEBUG] Not found annotated VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:15:57  [DEBUG] Not found VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:15:57  [DEBUG] Not found VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:15:57  [DEBUG] Not found uncompressed VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:15:57  [DEBUG] Not found uncompressed VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:15:57  [DEBUG] Not found VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-normal-batch-freebayes.vcf.gz
+2017-08-15 15:15:57  [DEBUG] Not found uncompressed VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-normal-batch-freebayes.vcf
+2017-08-15 15:15:57  Found VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/syn3-normal-freebayes.vcf.gz
+2017-08-15 15:15:57  [DEBUG] Sample: syn3-normal
+2017-08-15 15:15:57  [DEBUG] 
+2017-08-15 15:15:57  Preparing data for a clinical report
+2017-08-15 15:15:57  [DEBUG] 
+2017-08-15 15:15:57  [DEBUG] avg_depth: 46.6459375644596
+2017-08-15 15:15:57  [DEBUG] depth_cutoff: 37
+2017-08-15 15:15:57  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:57  [DEBUG] 
+2017-08-15 15:15:57  [DEBUG] Determining sex
+2017-08-15 15:15:57  [DEBUG] Male region total size: 3166
+2017-08-15 15:15:57  [DEBUG] The male non-PAR region does not overlap with the capture target - cannot determine sex.
+2017-08-15 15:15:57  [DEBUG] Running sambamba depth for key genes CDS
+2017-08-15 15:15:57  /Users/vlad/miniconda3/envs/ngs_reporting/bin/sambamba depth region -F "not duplicate and not failed_quality_control" -t 1 -L /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/target_genes_cds.bed  -T37 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/syn3-normal-ready.bam > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/syn3-normal/ngs_report/key_genes_cds_depth.tsv.tx
+2017-08-15 15:15:57    Processing reference #22 (chr21)
+2017-08-15 15:15:57  [DEBUG] Parsing sambamba depth for key genes CDS from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/syn3-normal/ngs_report/key_genes_cds_depth.tsv
+2017-08-15 15:15:58  [DEBUG] 
+2017-08-15 15:15:58  [DEBUG] Parsing actionable genes...
+2017-08-15 15:15:58  [DEBUG] NGS reports: parsing mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:58  [DEBUG] Preparing mutations stats
+2017-08-15 15:15:58  [DEBUG] Checking /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:58  [DEBUG] Reading mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/varFilter/freebayes.PASS.txt
+2017-08-15 15:15:58  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:58  [DEBUG] Found 8 mutations
+2017-08-15 15:15:58  [DEBUG]     0 in key genes
+2017-08-15 15:15:58  [DEBUG]     4 not unknown
+2017-08-15 15:15:58  [DEBUG] Retrieving SolveBio...
+2017-08-15 15:15:58  [DEBUG] 
+2017-08-15 15:15:58  [DEBUG] Parsing prioritized SV from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/cnv/syn3-normal-sv-prioritize.tsv
+2017-08-15 15:15:58  [DEBUG] Parsing prioritized SV events from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/cnv/syn3-normal-sv-prioritize.tsv
+2017-08-15 15:15:58  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:58  [DEBUG] 
+2017-08-15 15:15:58  [DEBUG] Parsing Seq2C from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/seq2c.filt.tsv
+2017-08-15 15:15:58  [DEBUG] Found 228 filtered Seq2C events (0 amplifications and 0 deletions).
+2017-08-15 15:15:58  [DEBUG] Parsing CNVkit results from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/cnvkit.filt.tsv
+2017-08-15 15:15:58  [DEBUG] Found 0 filtered CNVkit events (0 amplifications and 0 deletions).
+2017-08-15 15:15:58  [DEBUG] 
+2017-08-15 15:15:58  [DEBUG] ------
+2017-08-15 15:15:58  [DEBUG] Done parsing data.
+2017-08-15 15:15:58  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:58  NGB-CLI is not found.
+2017-08-15 15:15:58  [DEBUG] Preparing data...
+2017-08-15 15:15:58  [DEBUG]    known_cnt: 0
+2017-08-15 15:15:58  [DEBUG]    exon_dels_cnt: 0
+2017-08-15 15:15:58  [DEBUG]    fusions_cnt: 0
+2017-08-15 15:15:58  [DEBUG]    other_cnt: 288
+2017-08-15 15:15:58  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:58  [DEBUG] Preparing mutations stats for key gene tables
+2017-08-15 15:15:58  [DEBUG] Making key genes coverage report...
+2017-08-15 15:15:58  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:15:58  [DEBUG] 
+2017-08-15 15:15:58  [DEBUG] Embedding clinical_report.js...
+2017-08-15 15:15:58  [DEBUG] Embedding draw_mutations_plot.js...
+2017-08-15 15:15:59  [DEBUG] Embedding draw_substitutions_plot.js...
+2017-08-15 15:15:59  [DEBUG] Embedding draw_genes_coverage_plot.js...
+2017-08-15 15:15:59  [DEBUG] Embedding draw_seq2c_plot.js...
+2017-08-15 15:15:59  [DEBUG] Embedding d3.min.js...
+2017-08-15 15:15:59  [DEBUG] Embedding d3.tip.js...
+2017-08-15 15:15:59  [DEBUG] Embedding circosJS.js...
+2017-08-15 15:16:00  [DEBUG] Embedding circosJS_utils.js...
+2017-08-15 15:16:00  [DEBUG] Embedding circosJS_load.js...
+2017-08-15 15:16:00  [DEBUG] Embedding queue.js...
+2017-08-15 15:16:00  [DEBUG] Embedding jquery-2.2.0.min.js...
+2017-08-15 15:16:00  [DEBUG] Embedding flot/jquery.flot.js...
+2017-08-15 15:16:01  [DEBUG] Embedding scripts/utils.js...
+2017-08-15 15:16:01  [DEBUG] Embedding bootstrap/bootstrap.min.js...
+2017-08-15 15:16:02  [DEBUG] Embedding table_sorter/tsort.js...
+2017-08-15 15:16:02  [DEBUG] Embedding clinical_report.css...
+2017-08-15 15:16:03  [DEBUG] Embedding header_picture.css...
+2017-08-15 15:16:03  [DEBUG] Embedding circosJS.css...
+2017-08-15 15:16:04  [DEBUG] Embedding bootstrap/bootstrap.min.css...
+2017-08-15 15:16:04  [DEBUG] Embedding common.css...
+2017-08-15 15:16:05  [DEBUG] Embedding report.css...
+2017-08-15 15:16:06  [DEBUG] Embedding table_sorter/style.css...
+2017-08-15 15:16:06  [DEBUG] __write_html: work_dir=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports
+2017-08-15 15:16:06  [DEBUG] __write_html: html_fpath=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/syn3-normal.html
+2017-08-15 15:16:06  [DEBUG] __write_html: tx=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/syn3-normal.html.tx
+2017-08-15 15:16:06  [DEBUG] Saved clinical report to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/syn3-normal.html
+2017-08-15 15:16:06  [DEBUG] ----------------------------------------------------------------------
+2017-08-15 15:16:06  [DEBUG] 
+2017-08-15 15:16:06  [DEBUG] Not found annotated VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:16:06  [DEBUG] Not found annotated VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes-annotated.vcf.gz
+2017-08-15 15:16:06  [DEBUG] Not found VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:16:06  [DEBUG] Not found VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:16:06  [DEBUG] Not found uncompressed VCF in the datestamp dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:16:06  [DEBUG] Not found uncompressed VCF in the datestamp/var/raw dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/raw/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:16:06  [DEBUG] Not found VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-tumor-batch-freebayes.vcf.gz
+2017-08-15 15:16:06  [DEBUG] Not found uncompressed VCF in the datestamp/var dir /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/var/syn3-tumor-batch-freebayes.vcf
+2017-08-15 15:16:06  Found VCF /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-freebayes.vcf.gz
+2017-08-15 15:16:06  [DEBUG] Sample: syn3-tumor
+2017-08-15 15:16:06  [DEBUG] 
+2017-08-15 15:16:06  Preparing data for a clinical report
+2017-08-15 15:16:06  [DEBUG] 
+2017-08-15 15:16:06  [DEBUG] avg_depth: 46.4075914374423
+2017-08-15 15:16:06  [DEBUG] depth_cutoff: 37
+2017-08-15 15:16:06  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:16:06  [DEBUG] 
+2017-08-15 15:16:06  [DEBUG] Determining sex
+2017-08-15 15:16:06  [DEBUG] Male region total size: 3166
+2017-08-15 15:16:06  [DEBUG] The male non-PAR region does not overlap with the capture target - cannot determine sex.
+2017-08-15 15:16:06  [DEBUG] Running sambamba depth for key genes CDS
+2017-08-15 15:16:06  /Users/vlad/miniconda3/envs/ngs_reporting/bin/sambamba depth region -F "not duplicate and not failed_quality_control" -t 1 -L /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/target_genes_cds.bed  -T37 /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/syn3-tumor-ready.bam > /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/syn3-tumor/ngs_report/key_genes_cds_depth.tsv.tx
+2017-08-15 15:16:06    Processing reference #22 (chr21)
+2017-08-15 15:16:07  [DEBUG] Parsing sambamba depth for key genes CDS from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/work/postproc/syn3-tumor/ngs_report/key_genes_cds_depth.tsv
+2017-08-15 15:16:07  [DEBUG] 
+2017-08-15 15:16:07  [DEBUG] Parsing actionable genes...
+2017-08-15 15:16:07  [DEBUG] NGS reports: parsing mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt
+2017-08-15 15:16:07  [DEBUG] Preparing mutations stats
+2017-08-15 15:16:07  [DEBUG] Checking /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt
+2017-08-15 15:16:07  [DEBUG] Reading mutations from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/varFilter/freebayes.PASS.txt
+2017-08-15 15:16:07  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:16:07  [DEBUG] Found 11 mutations
+2017-08-15 15:16:07  [DEBUG]     0 in key genes
+2017-08-15 15:16:07  [DEBUG]     4 not unknown
+2017-08-15 15:16:07  [DEBUG] Retrieving SolveBio...
+2017-08-15 15:16:07  [DEBUG] 
+2017-08-15 15:16:07  [DEBUG] Parsing prioritized SV from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/cnv/syn3-tumor-sv-prioritize.tsv
+2017-08-15 15:16:07  [DEBUG] Parsing prioritized SV events from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/cnv/syn3-tumor-sv-prioritize.tsv
+2017-08-15 15:16:07  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:16:07  [DEBUG] 
+2017-08-15 15:16:07  [DEBUG] Parsing Seq2C from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/seq2c.filt.tsv
+2017-08-15 15:16:07  [DEBUG] Found 228 filtered Seq2C events (0 amplifications and 2 deletions).
+2017-08-15 15:16:07  [DEBUG] Parsing CNVkit results from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/cnv/cnvkit.filt.tsv
+2017-08-15 15:16:07  [DEBUG] Found 0 filtered CNVkit events (0 amplifications and 0 deletions).
+2017-08-15 15:16:07  [DEBUG] 
+2017-08-15 15:16:07  [DEBUG] ------
+2017-08-15 15:16:07  [DEBUG] Done parsing data.
+2017-08-15 15:16:07  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:16:07  NGB-CLI is not found.
+2017-08-15 15:16:07  [DEBUG] Preparing data...
+2017-08-15 15:16:07  [DEBUG]    known_cnt: 0
+2017-08-15 15:16:07  [DEBUG]    exon_dels_cnt: 0
+2017-08-15 15:16:07  [DEBUG]    fusions_cnt: 0
+2017-08-15 15:16:07  [DEBUG]    other_cnt: 176
+2017-08-15 15:16:07  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:16:07  [DEBUG] Preparing mutations stats for key gene tables
+2017-08-15 15:16:07  [DEBUG] Making key genes coverage report...
+2017-08-15 15:16:07  [DEBUG] Reading genome index file (.fai) to get chromosome lengths
+2017-08-15 15:16:07  [DEBUG] 
+2017-08-15 15:16:08  [DEBUG] Embedding clinical_report.js...
+2017-08-15 15:16:08  [DEBUG] Embedding draw_mutations_plot.js...
+2017-08-15 15:16:08  [DEBUG] Embedding draw_substitutions_plot.js...
+2017-08-15 15:16:08  [DEBUG] Embedding draw_genes_coverage_plot.js...
+2017-08-15 15:16:08  [DEBUG] Embedding draw_seq2c_plot.js...
+2017-08-15 15:16:08  [DEBUG] Embedding d3.min.js...
+2017-08-15 15:16:09  [DEBUG] Embedding d3.tip.js...
+2017-08-15 15:16:09  [DEBUG] Embedding circosJS.js...
+2017-08-15 15:16:09  [DEBUG] Embedding circosJS_utils.js...
+2017-08-15 15:16:09  [DEBUG] Embedding circosJS_load.js...
+2017-08-15 15:16:09  [DEBUG] Embedding queue.js...
+2017-08-15 15:16:10  [DEBUG] Embedding jquery-2.2.0.min.js...
+2017-08-15 15:16:10  [DEBUG] Embedding flot/jquery.flot.js...
+2017-08-15 15:16:10  [DEBUG] Embedding scripts/utils.js...
+2017-08-15 15:16:10  [DEBUG] Embedding bootstrap/bootstrap.min.js...
+2017-08-15 15:16:11  [DEBUG] Embedding table_sorter/tsort.js...
+2017-08-15 15:16:11  [DEBUG] Embedding clinical_report.css...
+2017-08-15 15:16:12  [DEBUG] Embedding header_picture.css...
+2017-08-15 15:16:12  [DEBUG] Embedding circosJS.css...
+2017-08-15 15:16:13  [DEBUG] Embedding bootstrap/bootstrap.min.css...
+2017-08-15 15:16:14  [DEBUG] Embedding common.css...
+2017-08-15 15:16:14  [DEBUG] Embedding report.css...
+2017-08-15 15:16:15  [DEBUG] Embedding table_sorter/style.css...
+2017-08-15 15:16:15  [DEBUG] __write_html: work_dir=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports
+2017-08-15 15:16:15  [DEBUG] __write_html: html_fpath=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/syn3-tumor.html
+2017-08-15 15:16:15  [DEBUG] __write_html: tx=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/syn3-tumor.html.tx
+2017-08-15 15:16:15  [DEBUG] Saved clinical report to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/reports/syn3-tumor.html
+2017-08-15 15:16:15  [DEBUG] ----------------------------------------------------------------------
+2017-08-15 15:16:15  [DEBUG] 
+2017-08-15 15:16:15  Building combined mutations NGS report...
+2017-08-15 15:16:15  No mutation files found, cannot generate the combined NGS report
+2017-08-15 15:16:15  [DEBUG] 
+2017-08-15 15:16:15  Evaluating capture panels...
+2017-08-15 15:16:15  [DEBUG] 
+2017-08-15 15:16:15  [DEBUG] Filtering regions by depth
+2017-08-15 15:16:15  [DEBUG] 
+2017-08-15 15:16:15  [DEBUG] Filtering regions by gene blacklist
+2017-08-15 15:16:15  [DEBUG] Filtered blacklisted genes: from 2122 down to 2025 regions
+2017-08-15 15:16:15  [DEBUG] Writing regions
+2017-08-15 15:16:15  [DEBUG] 
+2017-08-15 15:16:15  [DEBUG] 2025 regions were saved into /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.100.bed
+2017-08-15 15:16:15  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.100.bed.gz(.tbi)
+2017-08-15 15:16:15  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.100.bed.gz
+2017-08-15 15:16:15  [DEBUG] BGzipping file
+2017-08-15 15:16:15  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.100.bed
+2017-08-15 15:16:15  [DEBUG] Tabixing file
+2017-08-15 15:16:15  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix -p bed /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.100.bed.gz
+2017-08-15 15:16:15  [DEBUG] 
+2017-08-15 15:16:15  [DEBUG] Filtering regions by depth
+2017-08-15 15:16:16  [DEBUG] 
+2017-08-15 15:16:16  [DEBUG] Filtering regions by gene blacklist
+2017-08-15 15:16:16  [DEBUG] Filtered blacklisted genes: from 560 down to 544 regions
+2017-08-15 15:16:16  [DEBUG] Writing regions
+2017-08-15 15:16:16  [DEBUG] 
+2017-08-15 15:16:16  [DEBUG] 544 regions were saved into /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.50.bed
+2017-08-15 15:16:16  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.50.bed.gz(.tbi)
+2017-08-15 15:16:16  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.50.bed.gz
+2017-08-15 15:16:16  [DEBUG] BGzipping file
+2017-08-15 15:16:16  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.50.bed
+2017-08-15 15:16:16  [DEBUG] Tabixing file
+2017-08-15 15:16:16  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix -p bed /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.50.bed.gz
+2017-08-15 15:16:16  [DEBUG] 
+2017-08-15 15:16:16  [DEBUG] Filtering regions by depth
+2017-08-15 15:16:16  [DEBUG] 
+2017-08-15 15:16:16  [DEBUG] Filtering regions by gene blacklist
+2017-08-15 15:16:16  [DEBUG] Filtered blacklisted genes: from 15 down to 10 regions
+2017-08-15 15:16:16  [DEBUG] Writing regions
+2017-08-15 15:16:16  [DEBUG] 
+2017-08-15 15:16:16  [DEBUG] 10 regions were saved into /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.20.bed
+2017-08-15 15:16:16  [DEBUG] Compressing and tabixing file file, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.20.bed.gz(.tbi)
+2017-08-15 15:16:16  [DEBUG] Compressing VCF, writing /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.20.bed.gz
+2017-08-15 15:16:16  [DEBUG] BGzipping file
+2017-08-15 15:16:16  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bgzip /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.20.bed
+2017-08-15 15:16:17  [DEBUG] Tabixing file
+2017-08-15 15:16:17  /Users/vlad/miniconda3/envs/ngs_reporting/bin/tabix -p bed /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/qc/eval_panel/low_panel_coverage.20.bed.gz
+2017-08-15 15:16:17  [DEBUG] 
+2017-08-15 15:16:17  [DEBUG] Filtering regions by depth
+2017-08-15 15:16:17  [DEBUG] 
+2017-08-15 15:16:17  [DEBUG] Filtering regions by gene blacklist
+2017-08-15 15:16:17  [DEBUG] Filtered blacklisted genes: from 1 down to 0 regions
+2017-08-15 15:16:17  No low-depth regions outside the gene blacklist within 10 depth
+2017-08-15 15:16:17  [DEBUG] 
+2017-08-15 15:16:17  Building MultiQC report...
+2017-08-15 15:16:17  Getting run and codebase information...
+2017-08-15 15:16:18  [DEBUG] Rename /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/multiqc -> /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_bcbio
+2017-08-15 15:16:18  multiqc -f -v -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired --az-metadata /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/az_multiqc_metadata.yaml -l /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_list_files.txt
+2017-08-15 15:16:22    [2017-08-15 15:16:22,464] multiqc                                            [DEBUG  ]  No MultiQC config found: /Users/vladsaveliev/vagrant/MultiQC/multiqc_config.yaml
+2017-08-15 15:16:22    [2017-08-15 15:16:22,465] multiqc                                            [DEBUG  ]  No MultiQC config found: /Users/vladsaveliev/.multiqc_config.yaml
+2017-08-15 15:16:22    [2017-08-15 15:16:22,465] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+2017-08-15 15:16:22    [2017-08-15 15:16:22,465] multiqc.multiqc_az                                 [DEBUG  ]  Running config_loaded hook v1.1. Loading specific settings and metadata
+2017-08-15 15:16:22    [2017-08-15 15:16:22,486] multiqc                                            [DEBUG  ]  Command used: /Users/vlad/miniconda3/envs/ngs_reporting/bin/multiqc -f -v -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired --az-metadata /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/az_multiqc_metadata.yaml -l /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_list_files.txt
+2017-08-15 15:16:22    [2017-08-15 15:16:22,497] multiqc                                            [INFO   ]  This is MultiQC v1.2.dev0 (e7eeac0)
+2017-08-15 15:16:22    [2017-08-15 15:16:22,497] multiqc                                            [DEBUG  ]  Command     : /Users/vlad/miniconda3/envs/ngs_reporting/bin/multiqc -f -v -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired --az-metadata /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/az_multiqc_metadata.yaml -l /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_list_files.txt
+2017-08-15 15:16:22    [2017-08-15 15:16:22,497] multiqc                                            [DEBUG  ]  Working dir : /Users/vladsaveliev/vagrant/NGS_Reporting_TestData
+2017-08-15 15:16:22    [2017-08-15 15:16:22,497] multiqc                                            [INFO   ]  Template    : az
+2017-08-15 15:16:22    [2017-08-15 15:16:22,499] multiqc                                            [INFO   ]  Report title: bcbio_postproc_dream_chr21_unpaired
+2017-08-15 15:16:22    [2017-08-15 15:16:22,501] multiqc                                            [DEBUG  ]  Analysing modules: rnaseq_az, targqc, bcbio, afterqc, custom_content, conpair, peddy, methylQA, qualimap, preseq, quast, qorts, rna_seqc, rseqc, busco, goleft_indexcov, disambiguate, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, picard, prokka, samblaster, samtools, bamtools, jellyfish, vcftools, bismark, hicup, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, leehom, adapterRemoval, cutadapt, flexbar, trimmomatic, skewer, sortmerna, biobloomtools, fastq_screen, fastqc, clusterflow, bcl2fastq
+2017-08-15 15:16:22    [2017-08-15 15:16:22,502] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /var/folders/7p/ht5bn1r13y12k1sp5qpfdmt00000gp/T/tmpewvh1uii
+2017-08-15 15:16:22    Searching 85 files..
+2017-08-15 15:16:22    [2017-08-15 15:16:22,548] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: syn3-normal_coverage.bed
+2017-08-15 15:16:22    [2017-08-15 15:16:22,549] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: syn3-normal_coverage_summary.bed
+2017-08-15 15:16:22    [2017-08-15 15:16:22,549] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: syn3-normal_coverage_total_summary.bed
+2017-08-15 15:16:22    [2017-08-15 15:16:22,686] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+2017-08-15 15:16:22    [2017-08-15 15:16:22,967] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+2017-08-15 15:16:23    [2017-08-15 15:16:23,269] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: syn3-tumor_coverage.bed
+2017-08-15 15:16:23    [2017-08-15 15:16:23,273] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: syn3-tumor_coverage_summary.bed
+2017-08-15 15:16:23    [2017-08-15 15:16:23,276] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: syn3-tumor_coverage_total_summary.bed
+2017-08-15 15:16:23    [2017-08-15 15:16:23,336] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+2017-08-15 15:16:23    [2017-08-15 15:16:23,479] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+2017-08-15 15:16:23    [2017-08-15 15:16:23,847] multiqc.modules.rnaseq_az.rnaseq_az                [DEBUG  ]  Could not find the PCA data file in []
+2017-08-15 15:16:23    [2017-08-15 15:16:23,959] multiqc.modules.targqc.targqc_module               [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:23    MultiQC find_log_files report.files = {'adapterRemoval': [], 'afterqc': [], 'bamtools/stats': [], 'bcftools/stats': [{'fn': 'syn3-normal_bcftools_stats.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/variants', 'filesize': 23671}, {'fn': 'syn3-tumor_bcftools_stats.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/variants', 'filesize': 23921}], 'bcl2fastq': [], 'biobloomtools': [], 'bismark/align': [], 'bismark/dedup': [], 'bismark/meth_extract': [], 'bismark/m_bias': [], 'bismark/bam2nuc': [], 'bowtie': [], 'bowtie2': [], 'busco': [], 'custom_content': [], 'clusterflow/logs': [], 'clusterflow/runfiles': [], 'conpair/concordance': [], 'conpair/contamination': [], 'cutadapt': [], 'fastq_screen': [], 'fastqc/data': [{'fn': 'fastqc_data.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/fastqc', 'filesize': 14440}, {'fn': 'fastqc_data.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/fastqc', 'filesize': 14157}], 'fastqc/zip': [], 'fastqc/theoretical_gc': [], 'featurecounts': [], 'flexbar': [], 'gatk/varianteval': [], 'goleft_indexcov/roc': [], 'goleft_indexcov/ped': [], 'htseq': [], 'hicup': [], 'hisat2': [], 'homer/findpeaks': [], 'jellyfish': [], 'kallisto': [], 'leehom': [], 'macs2': [], 'methylQA': [], 'disambiguate': [], 'peddy/summary_table': [], 'peddy/het_check': [], 'peddy/ped_check': [], 'peddy/sex_check': [], 'picard/alignment_metrics': [], 'picard/basedistributionbycycle': [], 'picard/gcbias': [], 'picard/hsmetrics': [], 'picard/insertsize': [], 'picard/markdups': [], 'picard/oxogmetrics': [], 'picard/rnaseqmetrics': [], 'picard/rrbs_metrics': [], 'picard/wgs_metrics': [], 'preseq': [], 'preseq/real_counts': [], 'prokka': [], 'qorts': [], 'qualimap/bamqc/genome_results': [{'fn': 'genome_results.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/qualimap', 'filesize': 7490}, {'fn': 'genome_results.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap', 'filesize': 7496}], 'qualimap/bamqc/coverage': [{'fn': 'coverage_histogram.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport', 'filesize': 7443}, {'fn': 'coverage_histogram.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport', 'filesize': 7623}], 'qualimap/bamqc/insert_size': [{'fn': 'insert_size_histogram.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport', 'filesize': 7791}, {'fn': 'insert_size_histogram.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport', 'filesize': 7866}], 'qualimap/bamqc/genome_fraction': [{'fn': 'genome_fraction_coverage.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport', 'filesize': 1183}, {'fn': 'genome_fraction_coverage.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport', 'filesize': 1177}], 'qualimap/bamqc/gc_dist': [{'fn': 'mapped_reads_gc-content_distribution.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/qualimap/syn3-normal/raw_data_qualimapReport', 'filesize': 3552}, {'fn': 'mapped_reads_gc-content_distribution.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/qualimap/syn3-tumor/raw_data_qualimapReport', 'filesize': 3516}], 'qualimap/rnaseq/rnaseq_results': [], 'qualimap/rnaseq/coverage': [], 'quast': [], 'rna_seqc/metrics': [], 'rna_seqc/coverage': [], 'rna_seqc/correlation': [], 'rseqc/bam_stat': [], 'rseqc/gene_body_coverage': [], 'rseqc/inner_distance': [], 'rseqc/junction_annotation': [], 'rseqc/junction_saturation': [], 'rseqc/read_gc': [], 'rseqc/read_distribution': [], 'rseqc/read_duplication_pos': [], 'rseqc/infer_experiment': [], 'salmon/meta': [], 'salmon/fld': [], 'samblaster': [], 'samtools/stats': [{'fn': 'syn3-normal.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/samtools', 'filesize': 72259}, {'fn': 'syn3-tumor.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/samtools', 'filesize': 73089}], 'samtools/flagstat': [], 'samtools/idxstats': [], 'samtools/rmdup': [], 'skewer': [], 'slamdunk/summary': [], 'slamdunk/PCA': [], 'slamdunk/rates': [], 'slamdunk/utrrates': [], 'slamdunk/tcperreadpos': [], 'slamdunk/tcperutrpos': [], 'snpeff': [{'fn': 'syn3-normal.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/variants', 'filesize': 34671}, {'fn': 'syn3-tumor.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/variants', 'filesize': 34707}], 'sortmerna': [], 'star': [], 'star_genecounts': [], 'theta2': [], 'tophat': [], 'trimmomatic': [], 'vcftools/relatedness2': [], 'bcbio/metrics': [{'fn': 'syn3-normal_bcbio.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_bcbio/report/metrics', 'filesize': 535}, {'fn': 'syn3-tumor_bcbio.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_bcbio/report/metrics', 'filesize': 532}], 'bcbio/coverage': [{'fn': 'syn3-normal_bcbio_coverage.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/coverage', 'filesize': 2972}, {'fn': 'syn3-tumor_bcbio_coverage.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/coverage', 'filesize': 2884}], 'bcbio/coverage_avg': [{'fn': 'syn3-normal_bcbio_coverage_avg.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-normal/qc/coverage', 'filesize': 482}, {'fn': 'syn3-tumor_bcbio_coverage_avg.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/syn3-tumor/qc/coverage', 'filesize': 472}], 'bcbio/variants': [], 'bcbio/target': [{'fn': 'target_info.yaml', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_bcbio/report/metrics', 'filesize': 351}], 'bcbio/qsignature': [], 'bcbio/vcfstats': [], 'bcbio/seqbuster': [], 'bcbio/umi': [], 'bcbio/viral': [], 'bcbio/damage': [], 'targqc/summary': [], 'rnaseq_az/pca_data': []}
+2017-08-15 15:16:23    MultiQC find_log_files report.files['bcbio/metrics'] = [{'fn': 'syn3-normal_bcbio.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_bcbio/report/metrics', 'filesize': 535}, {'fn': 'syn3-tumor_bcbio.txt', 'root': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/log/multiqc_bcbio/report/metrics', 'filesize': 532}]
+2017-08-15 15:16:23    [2017-08-15 15:16:23,963] multiqc.multiqc_bcbio                              [INFO   ]  Found 2 reports
+2017-08-15 15:16:24    [2017-08-15 15:16:24,019] multiqc.modules.afterqc.afterqc                    [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:24    [2017-08-15 15:16:24,032] multiqc.modules.custom_content.custom_content      [DEBUG  ]  No custom content found
+2017-08-15 15:16:24    [2017-08-15 15:16:24,036] multiqc.modules.conpair.conpair                    [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:24    [2017-08-15 15:16:24,047] multiqc.modules.peddy.peddy                        [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:24    [2017-08-15 15:16:24,054] multiqc.modules.methylQA.methylQA                  [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:24    [2017-08-15 15:16:24,065] multiqc.modules.qualimap.QM_BamQC                  [DEBUG  ]  Custom Qualimap thresholds: 1, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000
+2017-08-15 15:16:29    [2017-08-15 15:16:29,098] multiqc.modules.qualimap.QM_BamQC                  [DEBUG  ]  Hiding Qualimap thresholds: 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000
+2017-08-15 15:16:29    [2017-08-15 15:16:29,098] multiqc.modules.qualimap.qualimap                  [INFO   ]  Found 2 BamQC reports
+2017-08-15 15:16:29    [2017-08-15 15:16:29,103] multiqc.modules.preseq.preseq                      [DEBUG  ]  Could not find any preseq data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,106] multiqc.modules.quast.quast                        [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,111] multiqc.modules.qorts.qorts                        [DEBUG  ]  Could not find any QoRTs data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,116] multiqc.modules.rna_seqc.rna_seqc                  [DEBUG  ]  Could not find any RNA-SeQC data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,125] multiqc.modules.rseqc.rseqc                        [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,129] multiqc.modules.busco.busco                        [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,133] multiqc.modules.goleft_indexcov.goleft_indexcov    [DEBUG  ]  Did not find goleft indexcov outputs in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,137] multiqc.modules.disambiguate.disambiguate          [DEBUG  ]  Could not find any data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,142] multiqc.modules.homer.homer                        [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,145] multiqc.modules.macs2.macs2                        [DEBUG  ]  Could not find any MACS2 data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,150] multiqc.modules.theta2.theta2                      [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,160] multiqc.modules.snpeff.snpeff                      [INFO   ]  Found 2 reports
+2017-08-15 15:16:29    [2017-08-15 15:16:29,177] multiqc.modules.gatk.gatk                          [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,181] multiqc.modules.htseq.htseq                        [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,190] multiqc.modules.bcftools.bcftools                  [INFO   ]  Found 2 stats reports
+2017-08-15 15:16:29    [2017-08-15 15:16:29,195] multiqc.modules.featureCounts.feature_counts       [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,207] multiqc.modules.picard.picard                      [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,210] multiqc.modules.prokka.prokka                      [DEBUG  ]  Could not find any Prokka data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,215] multiqc.modules.samblaster.samblaster              [DEBUG  ]  Could not find any data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,228] multiqc.modules.samtools.samtools                  [INFO   ]  Found 2 stats reports
+2017-08-15 15:16:29    [2017-08-15 15:16:29,232] multiqc.modules.bamtools.bamtools                  [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,235] multiqc.modules.jellyfish.jellyfish                [DEBUG  ]  Could not find any data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,239] multiqc.modules.vcftools.vcftools                  [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,243] multiqc.modules.bismark.bismark                    [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,247] multiqc.modules.hicup.hicup                        [DEBUG  ]  Could not find any HiCUP data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,251] multiqc.modules.salmon.salmon                      [DEBUG  ]  Could not find any Salmon data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,256] multiqc.modules.kallisto.kallisto                  [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,260] multiqc.modules.slamdunk.slamdunk                  [DEBUG  ]  No slamdunk reports found.
+2017-08-15 15:16:29    [2017-08-15 15:16:29,264] multiqc.modules.star.star                          [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,268] multiqc.modules.hisat2.hisat2                      [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,273] multiqc.modules.tophat.tophat                      [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,276] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,280] multiqc.modules.bowtie1.bowtie1                    [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,285] multiqc.modules.leehom.leehom                      [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,288] multiqc.modules.adapterRemoval.adapterRemoval      [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,294] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,298] multiqc.modules.flexbar.flexbar                    [DEBUG  ]  Could not find any Flexbar data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,303] multiqc.modules.trimmomatic.trimmomatic            [DEBUG  ]  Could not find any Trimmomatic data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,307] multiqc.modules.skewer.skewer                      [DEBUG  ]  Could not find any data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,311] multiqc.modules.sortmerna.sortmerna                [DEBUG  ]  Could not find any SortMeRNA data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,315] multiqc.modules.biobloomtools.biobloomtools        [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,319] multiqc.modules.fastq_screen.fastq_screen          [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,334] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 2 reports
+2017-08-15 15:16:29    [2017-08-15 15:16:29,386] multiqc.modules.clusterflow.clusterflow            [DEBUG  ]  Could not find any reports in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,394] multiqc.modules.bcl2fastq.bcl2fastq                [DEBUG  ]  Could not find any bcl2fastq data in []
+2017-08-15 15:16:29    [2017-08-15 15:16:29,404] multiqc                                            [WARNING]  Importing genologics failed: Traceback (most recent call last):
+2017-08-15 15:16:29      File "/Users/vladsaveliev/miniconda3/envs/ngs_reporting/lib/python3.6/site-packages/multiqc_clarity/multiqc_clarity.py", line 34, in __init__
+2017-08-15 15:16:29        from genologics import config as genologics_config
+2017-08-15 15:16:29      File "/Users/vladsaveliev/miniconda3/envs/ngs_reporting/lib/python3.6/site-packages/genologics/config.py", line 5, in <module>
+2017-08-15 15:16:29        import ConfigParser
+2017-08-15 15:16:29    ModuleNotFoundError: No module named 'ConfigParser'
+2017-08-15 15:16:29    
+2017-08-15 15:16:29    [2017-08-15 15:16:29,447] multiqc                                            [INFO   ]  Compressing plot data
+2017-08-15 15:16:29    [2017-08-15 15:16:29,674] multiqc.multiqc_az                                 [INFO   ]  Adding NGS repots links
+2017-08-15 15:16:29    [2017-08-15 15:16:29,674] multiqc                                            [INFO   ]  Report      : results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/report.html
+2017-08-15 15:16:29    [2017-08-15 15:16:29,674] multiqc                                            [INFO   ]  Data        : None
+2017-08-15 15:16:30    [2017-08-15 15:16:30,010] multiqc                                            [INFO   ]  MultiQC complete
+2017-08-15 15:16:30  
+2017-08-15 15:16:30  Exposing to NGS webserver...
+2017-08-15 15:16:30  
+2017-08-15 15:16:30  Report path: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final/2014-08-13_dream_chr21_unpaired/report.html
+2017-08-15 15:16:30  
+2017-08-15 15:16:30  ----------------------------------------------------------------------
+2017-08-15 15:16:30  Done post-processing.
