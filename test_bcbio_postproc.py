@@ -18,7 +18,9 @@ ONLY_DIFF = False   # Do not run, just diff the latest results against the gold 
 html_wrapper = [
     'grep', '-A1', '<div id=".*_json">', '|', 'grep', '-v', '<div id=".*_json">', '|',
     'python', '-c',
-    'import sys, json; sys.stdout.write(json.dumps([json.loads(el) for el in sys.stdin.read().split(\'--\')]))'
+        'import sys, json; '
+        'sys.stdout.write(json.dumps([json.loads(el) for el in sys.stdin.read().split(\'--\')], '
+                                     'indent=2, sort_keys=True))'
 ]
 
 vcf_ignore_lines = [
