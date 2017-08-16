@@ -116,6 +116,7 @@ class Test_variants(BaseTestCase):
             try:
                 self._check_file_throws(fpath)
             except (subprocess.CalledProcessError, AssertionError) as e:
+                print(e, fpath)
                 failed = True
         assert not failed, 'Some files are not found'
 
