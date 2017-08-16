@@ -117,7 +117,7 @@ class Test_bcbio_postproc(BaseTestCase):
         failed = self._check_file(failed, join(bcbio_proj_dir, 'config', 'run_info_ExomeSeq.yaml'))
         failed = self._check_file(failed, join(datestamp_dir, 'NGv3.chr21.4col.clean.sorted.bed'))
         failed = self._check_file(failed, join(datestamp_dir, 'report.html'), check_diff=False)
-        failed = self._check_file(failed, join(datestamp_dir, 'reports', 'call_vis.html'), wrapper=html_wrapper)
+        failed = self._check_file(failed, join(datestamp_dir, 'reports', 'call_vis.html'), wrapper=html_wrapper, check_diff=False)
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.filt.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c-coverage.tsv'), wrapper=['sort'])
@@ -130,7 +130,7 @@ class Test_bcbio_postproc(BaseTestCase):
             else:
                 failed = self._check_var_in_datestamp(failed, datestamp_dir, caller)
             for sample in samples:
-                failed = self._check_file(failed, join(datestamp_dir, 'reports', sample + '.html'), wrapper=html_wrapper)
+                failed = self._check_file(failed, join(datestamp_dir, 'reports', sample + '.html'), wrapper=html_wrapper, check_diff=False)
                 sample_dir = join(bcbio_proj_dir, 'final', sample)
                 self._check_var_in_sample(failed, sample_dir, sample, caller)
 
