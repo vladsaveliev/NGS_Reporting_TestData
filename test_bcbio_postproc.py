@@ -152,32 +152,32 @@ class Test_bcbio_postproc(BaseTestCase):
         self._test_dream_chr20('dream_chr21_paired_with_germline',
                                callers={'vardict': ['syn3-tumor'], 'gatk-haplotype': ['syn3-normal-germline']})
 
-    # def test_04_rnaseq(self):
-    #     bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname='rnaseq')
-    #
-    #     datestamp_name = '2017-02-28_rnaseq_1_0_2a'
-    #     sample_name = 'PI3Ksign2_E001006_CD4Tcells_AZ4943_NS_KT_15'
-    #     datestamp_dir = join(bcbio_proj_dir, 'final', datestamp_name)
-    #     sample_dir = join(bcbio_proj_dir, 'final', sample_name)
-    #
-    #     failed = False
-    #     failed = self._check_file(failed, join(datestamp_dir, 'annotated_combined.counts'))
-    #     failed = self._check_file(failed, join(datestamp_dir, 'tx2gene.csv'))
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'counts.tsv'))
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'dexseq.tsv'))
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'gene.sf.tpm.tsv'))
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'isoform.sf.tpm.tsv'))
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'counts.html'), wrapper=['grep', '<td metric='])
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'dexseq.html'), wrapper=['grep', '<td metric='])
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'gene.sf.tpm.html'), wrapper=['grep', '<td metric='])
-    #     failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'isoform.sf.tpm.html'), wrapper=['grep', '<td metric='])
-    #     failed = self._check_file(failed, join(datestamp_dir, 'report.html'), check_diff=False)
-    #
-    #     assert not run_with_error, 'post-rpocessing finished with error'
-    #     assert not failed, 'some of the diffs have failed'
-    #
-    #     if exists(join(bcbio_proj_dir, 'work')):
-    #         shutil.rmtree(join(bcbio_proj_dir, 'work'))
+    def test_04_rnaseq(self):
+        bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname='rnaseq')
+
+        datestamp_name = '2017-02-28_rnaseq_1_0_2a'
+        sample_name = 'PI3Ksign2_E001006_CD4Tcells_AZ4943_NS_KT_15'
+        datestamp_dir = join(bcbio_proj_dir, 'final', datestamp_name)
+        sample_dir = join(bcbio_proj_dir, 'final', sample_name)
+
+        failed = False
+        failed = self._check_file(failed, join(datestamp_dir, 'annotated_combined.counts'))
+        failed = self._check_file(failed, join(datestamp_dir, 'tx2gene.csv'))
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'counts.tsv'))
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'dexseq.tsv'))
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'gene.sf.tpm.tsv'))
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'isoform.sf.tpm.tsv'))
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'counts.html'), wrapper=['grep', '<td metric='])
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'dexseq.html'), wrapper=['grep', '<td metric='])
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'gene.sf.tpm.html'), wrapper=['grep', '<td metric='])
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'isoform.sf.tpm.html'), wrapper=['grep', '<td metric='])
+        failed = self._check_file(failed, join(datestamp_dir, 'report.html'), check_diff=False)
+
+        assert not run_with_error, 'post-rpocessing finished with error'
+        assert not failed, 'some of the diffs have failed'
+
+        if exists(join(bcbio_proj_dir, 'work')):
+            shutil.rmtree(join(bcbio_proj_dir, 'work'))
 
 
 # get rnaseq data:
