@@ -36,5 +36,5 @@ run_section:
   analysis_dir: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/dream_chr21_unpaired/final
   data_versions: <a href="log/data_versions.csv">data versions</a>
   program_versions: <a href="log/programs.txt">program versions</a>
-  run_date: 15 Aug 2017, 15:16 (GMT+0300)
-  suite_version: Reporting Suite v.2.3.18, last modified 15 Aug 2017, 14:35 (GMT+0300)
+  run_date: 17 Aug 2017, 04:04 (GMT+0300)
+  suite_version: Reporting Suite v.2.3.18, last modified 17 Aug 2017, 03:52 (GMT+0300)
