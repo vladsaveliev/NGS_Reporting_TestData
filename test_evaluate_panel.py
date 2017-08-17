@@ -24,7 +24,7 @@ class Test_evaluate_panel(BaseTestCase):
         BaseTestCase.setUp(self)
 
     def test(self):
-        bcbio_dir = join(dirname(Test_evaluate_panel.data_dir), 'bcbio_postproc', 'dream_chr21')
+        bcbio_dir = join(dirname(Test_evaluate_panel.data_dir), 'bcbio_postproc', 'dream_chr21_paired')
         assert isdir(bcbio_dir), 'data dir ' + bcbio_dir + ' not found'
         
         o_dir = join(self.results_dir, 'capture_eval')
