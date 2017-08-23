@@ -46,7 +46,7 @@ class Test_bcbio_postproc(BaseTestCase):
             info('PATH = ' + os.environ['PATH'])
         BaseTestCase.setUp(self)
 
-    def _run_postproc(self, bcbio_dirname):
+    def _run_postproc(self, bcbio_dirname, eval_panel=False, parallel=False, debug=True):
         results_dir = join(self.results_dir, bcbio_dirname)
         run_with_error = False
 
@@ -61,7 +61,13 @@ class Test_bcbio_postproc(BaseTestCase):
                     os.rename(results_dir, prev_run)
                 shutil.copytree(bcbio_dir, results_dir, symlinks=True)
 
-            cmdl = [self.script, results_dir, '--eval-panel', '-d', '-t', '1']
+            cmdl = [self.script, results_dir]
+            if eval_panel:
+                cmdl.append('--eval-panel')
+            if not parallel:
+                cmdl.extend(['-t', '1'])
+            if debug:
+                cmdl.append('-d')
 
             run_with_error = False
             info('-' * 100)
@@ -107,8 +113,8 @@ class Test_bcbio_postproc(BaseTestCase):
         failed = self._check_file(failed, join(sample_dir, 'varFilter', caller + '.REJECT.txt'))
         return failed
 
-    def _test_dream_chr20(self, name, callers):
-        bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname=name)
+    def _test_dream_chr20(self, name, callers, parallel=False, eval_panel=False):
+        bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname=name, parallel=parallel, eval_panel=eval_panel)
 
         datestamp_name = '2014-08-13_' + name
         datestamp_dir = join(bcbio_proj_dir, 'final', datestamp_name)
@@ -142,11 +148,11 @@ class Test_bcbio_postproc(BaseTestCase):
 
     def test_01_paired(self):
         self._test_dream_chr20('dream_chr21_paired',
-                               callers={'vardict': ['syn3-tumor']})
+                               callers={'vardict': ['syn3-tumor']}, eval_panel=True)
 
     def test_02_unpaired(self):
         self._test_dream_chr20('dream_chr21_unpaired',
-                               callers={'freebayes': ['syn3-tumor', 'syn3-normal']})
+                               callers={'freebayes': ['syn3-tumor', 'syn3-normal']}, parallel=True)
 
     def test_03_paired_with_germline(self):
         self._test_dream_chr20('dream_chr21_paired_with_germline',
