@@ -1,0 +1,16 @@
+%GC	49
+Average_insert_size	894.0
+Average_read_length	96.0
+Disambiguated_ambiguous_reads	36
+Disambiguated_hg38_reads	93
+Disambiguated_mm10_reads	0
+Duplicates	0.0
+Mapped_paired_reads	14746.0
+Mapped_reads	14746.0
+Name	brain100-1-1
+Quality_format	standard
+Sequence_length	35-100
+Sequences_flagged_as_poor_quality	0
+Total_reads	14748.0
+sample	brain100-1-1
+rRNA_rate	NA

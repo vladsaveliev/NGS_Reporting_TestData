@@ -159,24 +159,17 @@ class Test_bcbio_postproc(BaseTestCase):
                                callers={'vardict': ['syn3-tumor'], 'gatk-haplotype': ['syn3-normal-germline']})
 
     def test_04_rnaseq(self):
-        bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname='rnaseq')
+        bcbio_proj_dir, run_with_error = self._run_postproc(bcbio_dirname='rnaseq_hg38_hisat2')
 
-        datestamp_name = '2017-02-28_rnaseq_1_0_2a'
-        sample_name = 'PI3Ksign2_E001006_CD4Tcells_AZ4943_NS_KT_15'
+        datestamp_name = '2017-08-13_rnaseq_hg38_hisat2'
+        sample_name = 'brain100-1-1'
         datestamp_dir = join(bcbio_proj_dir, 'final', datestamp_name)
         sample_dir = join(bcbio_proj_dir, 'final', sample_name)
 
         failed = False
-        failed = self._check_file(failed, join(datestamp_dir, 'annotated_combined.counts'))
         failed = self._check_file(failed, join(datestamp_dir, 'tx2gene.csv'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.counts'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.dexseq'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.gene.sf.tpm'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.isoform.sf.tpm'))
+        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.counts'))
         failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'counts.html'), wrapper=['grep', '<td metric='])
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'dexseq.html'), wrapper=['grep', '<td metric='])
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'gene.sf.tpm.html'), wrapper=['grep', '<td metric='])
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'isoform.sf.tpm.html'), wrapper=['grep', '<td metric='])
         failed = self._check_file(failed, join(datestamp_dir, 'report.html'), check_diff=False)
 
         assert not run_with_error, 'post-rpocessing finished with error'

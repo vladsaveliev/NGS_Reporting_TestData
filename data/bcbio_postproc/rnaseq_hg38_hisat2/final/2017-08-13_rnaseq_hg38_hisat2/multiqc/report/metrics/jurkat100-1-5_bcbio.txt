@@ -1,0 +1,16 @@
+%GC	48
+Average_insert_size	3791.2
+Average_read_length	98.0
+Disambiguated_ambiguous_reads	93
+Disambiguated_hg38_reads	38
+Disambiguated_mm10_reads	0
+Duplicates	0.0
+Mapped_paired_reads	147426.0
+Mapped_reads	147552.0
+Name	jurkat100-1-5
+Quality_format	standard
+Sequence_length	35-100
+Sequences_flagged_as_poor_quality	0
+Total_reads	147684.0
+sample	jurkat100-1-5
+rRNA_rate	NA

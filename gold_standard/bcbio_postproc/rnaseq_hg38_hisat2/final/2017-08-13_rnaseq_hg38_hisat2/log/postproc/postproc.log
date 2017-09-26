@@ -1,0 +1,242 @@
+2017-09-26 17:29:20  NGS Reporting v.2.3.21, git revision aa4c3a0
+2017-09-26 17:29:20  Vladislavs-MacBook-Air-2.local
+2017-09-26 17:29:20  Login: vladsaveliev   			Name: Vlad Saveliev
+2017-09-26 17:29:20  
+2017-09-26 17:29:20  /Users/vlad/miniconda3/envs/ngs_reporting/bin/bcbio_postproc /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2 -t 1 -d
+2017-09-26 17:29:20  
+2017-09-26 17:29:20  ----------------------------------------------------------------------
+2017-09-26 17:29:20  [DEBUG] System config: path ngs.q is relative, however can't expand relatively to base dir of the system yaml /Users/vladsaveliev/vagrant/NGS_Reporting/az/configs, or current working directory /Users/vladsaveliev/vagrant/NGS_Reporting_TestData. Keeping the value as is (probably not a path at all?).
+2017-09-26 17:29:20  [DEBUG] System config: path sge is relative, however can't expand relatively to base dir of the system yaml /Users/vladsaveliev/vagrant/NGS_Reporting/az/configs, or current working directory /Users/vladsaveliev/vagrant/NGS_Reporting_TestData. Keeping the value as is (probably not a path at all?).
+2017-09-26 17:29:20  Neither min freq not filt config was provided, using settings for exome
+2017-09-26 17:29:21  Loading bcbio project from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2
+2017-09-26 17:29:21  ----------------------------------------------------------------------
+2017-09-26 17:29:21  Bcbio project directory: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2
+2017-09-26 17:29:21  Using bcbio YAML config /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/config/rnaseq_hg38_hisat2.yaml
+2017-09-26 17:29:21  [DEBUG] Reading sample details...
+2017-09-26 17:29:21  No BAM file found for brain100-1-1
+2017-09-26 17:29:21  No BAM file found for jurkat100-1-5
+2017-09-26 17:29:21  ERROR: for some samples, BAM files not found in the final dir
+2017-09-26 17:29:21  RNAseq
+2017-09-26 17:29:21  [DEBUG] Done loading bcbio project bcbio_postproc_rnaseq_hg38_hisat2
+2017-09-26 17:29:21  Loaded /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final
+2017-09-26 17:29:21  Filtering config: setting config for genome
+2017-09-26 17:29:21  
+2017-09-26 17:29:21  ----------------------------------------------------------------------
+2017-09-26 17:29:21  Starting post-processing bcbio project bcbio_postproc_rnaseq_hg38_hisat2
+2017-09-26 17:29:21  ----------------------------------------------------------------------
+2017-09-26 17:29:21  [DEBUG] Logging to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/log/postproc/postproc.log
+2017-09-26 17:29:21  [DEBUG] 
+2017-09-26 17:29:21  Moving /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/annotated_combined.counts to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/raw
+2017-09-26 17:29:21  Moving /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/combined.counts to /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/raw
+2017-09-26 17:29:21  **********************************************************************
+2017-09-26 17:29:21  Analysing expression
+2017-09-26 17:29:21  Gene expression heatmaps summary for all samples
+2017-09-26 17:29:21  Found annotated /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/raw/annotated_combined.counts
+2017-09-26 17:29:21  Copying into /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/combined.counts
+2017-09-26 17:29:21  Preparing gene counts stats for expression heatmaps
+2017-09-26 17:29:21  Checking /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/combined.counts
+2017-09-26 17:29:21  Reading gene counts from /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/combined.counts
+2017-09-26 17:29:21  [DEBUG] __write_html: work_dir=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/html
+2017-09-26 17:29:21  [DEBUG] __write_html: html_fpath=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/html/counts.html
+2017-09-26 17:29:21  [DEBUG] __write_html: tx=/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/html/counts.html.tx
+2017-09-26 17:29:22  [DEBUG] Embedding bootstrap/bootstrap.min.css...
+2017-09-26 17:29:22  [DEBUG] Embedding common.css...
+2017-09-26 17:29:22  [DEBUG] Embedding report.css...
+2017-09-26 17:29:22  [DEBUG] Embedding table_sorter/style.css...
+2017-09-26 17:29:22  [DEBUG] Embedding rnaseq.css...
+2017-09-26 17:29:22  [DEBUG] Embedding jquery-2.2.0.min.js...
+2017-09-26 17:29:23  [DEBUG] Embedding bootstrap/bootstrap.min.js...
+2017-09-26 17:29:23  [DEBUG] Embedding bootstrap/bootstrap-tooltip-vlad.js...
+2017-09-26 17:29:23  [DEBUG] Embedding scripts/utils.js...
+2017-09-26 17:29:23  [DEBUG] Embedding table_sorter/tsort.js...
+2017-09-26 17:29:23  [DEBUG] Embedding rnaseq_heatmaps.js...
+2017-09-26 17:29:23  Expression: Gene counts heatmap saved in /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/html/counts.html
+2017-09-26 17:29:24  Done
+2017-09-26 17:29:24  [DEBUG] Running locally using 1 thread(s)
+2017-09-26 17:29:24  
+2017-09-26 17:29:24  **********************************************************************
+2017-09-26 17:29:24  Analysing genomic variation
+2017-09-26 17:29:24  **********************************************************************
+2017-09-26 17:29:24  Processing CNV...
+2017-09-26 17:29:24  [DEBUG] No Seq2C results found.
+2017-09-26 17:29:24  CNVkit was not run, skipping post-processing it
+2017-09-26 17:29:24  Reporting
+2017-09-26 17:29:24  **********************************************************************
+2017-09-26 17:29:24  [DEBUG] 
+2017-09-26 17:29:24  Building MultiQC report...
+2017-09-26 17:29:24  Getting run and codebase information...
+2017-09-26 17:29:24  Cannot find Avg_coverage, Avg_coverage_per_region in metrics for brain100-1-1
+2017-09-26 17:29:24  Cannot find Avg_coverage, Avg_coverage_per_region in metrics for jurkat100-1-5
+2017-09-26 17:29:24  Making RNASeq PCA plot
+2017-09-26 17:29:24  /Users/vlad/miniconda3/envs/ngs_reporting/bin/Rscript /Users/vladsaveliev/vagrant/NGS_Reporting/ngs_reporting/rnaseq/pca.R /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/pca_data.csv /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/pca_data.txt.tx /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/expression/combined.counts
+2017-09-26 17:29:24    Загрузка требуемого пакета: S4Vectors
+2017-09-26 17:29:24    Загрузка требуемого пакета: methods
+2017-09-26 17:29:24    Загрузка требуемого пакета: stats4
+2017-09-26 17:29:24    Загрузка требуемого пакета: BiocGenerics
+2017-09-26 17:29:24    Загрузка требуемого пакета: parallel
+2017-09-26 17:29:25    
+2017-09-26 17:29:25    Присоединяю пакет: ‘BiocGenerics’
+2017-09-26 17:29:25    
+2017-09-26 17:29:25    Следующие объекты скрыты от ‘package:parallel’:
+2017-09-26 17:29:25    
+2017-09-26 17:29:25        clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+2017-09-26 17:29:25        clusterExport, clusterMap, parApply, parCapply, parLapply,
+2017-09-26 17:29:25        parLapplyLB, parRapply, parSapply, parSapplyLB
+2017-09-26 17:29:25    
+2017-09-26 17:29:25    Следующие объекты скрыты от ‘package:stats’:
+2017-09-26 17:29:25    
+2017-09-26 17:29:25        IQR, mad, xtabs
+2017-09-26 17:29:25    
+2017-09-26 17:29:25    Следующие объекты скрыты от ‘package:base’:
+2017-09-26 17:29:25    
+2017-09-26 17:29:25        Filter, Find, Map, Position, Reduce, anyDuplicated, append,
+2017-09-26 17:29:25        as.data.frame, cbind, colnames, do.call, duplicated, eval, evalq,
+2017-09-26 17:29:25        get, grep, grepl, intersect, is.unsorted, lapply, lengths, mapply,
+2017-09-26 17:29:25        match, mget, order, paste, pmax, pmax.int, pmin, pmin.int, rank,
+2017-09-26 17:29:25        rbind, rownames, sapply, setdiff, sort, table, tapply, union,
+2017-09-26 17:29:25        unique, unsplit, which, which.max, which.min
+2017-09-26 17:29:25    
+2017-09-26 17:29:26    
+2017-09-26 17:29:26    Присоединяю пакет: ‘S4Vectors’
+2017-09-26 17:29:26    
+2017-09-26 17:29:26    Следующие объекты скрыты от ‘package:base’:
+2017-09-26 17:29:26    
+2017-09-26 17:29:26        colMeans, colSums, expand.grid, rowMeans, rowSums
+2017-09-26 17:29:26    
+2017-09-26 17:29:26    Загрузка требуемого пакета: IRanges
+2017-09-26 17:29:27    Загрузка требуемого пакета: GenomicRanges
+2017-09-26 17:29:27    Загрузка требуемого пакета: GenomeInfoDb
+2017-09-26 17:29:28    Загрузка требуемого пакета: SummarizedExperiment
+2017-09-26 17:29:28    Загрузка требуемого пакета: Biobase
+2017-09-26 17:29:29    Welcome to Bioconductor
+2017-09-26 17:29:29    
+2017-09-26 17:29:29        Vignettes contain introductory material; view with
+2017-09-26 17:29:29        'browseVignettes()'. To cite Bioconductor, see
+2017-09-26 17:29:29        'citation("Biobase")', and for packages 'citation("pkgname")'.
+2017-09-26 17:29:29    
+2017-09-26 17:29:29    
+2017-09-26 17:29:29    Присоединяю пакет: ‘SummarizedExperiment’
+2017-09-26 17:29:30    
+2017-09-26 17:29:30    Следующие объекты скрыты от ‘package:IRanges’:
+2017-09-26 17:29:30    
+2017-09-26 17:29:30        acbind, arbind
+2017-09-26 17:29:30    
+2017-09-26 17:29:34    Предупреждения:
+2017-09-26 17:29:34    1: множественные таблицы методов найдены для ‘arbind’
+2017-09-26 17:29:34    2: множественные таблицы методов найдены для ‘acbind’
+2017-09-26 17:29:34    3: replacing previous import ‘IRanges::arbind’ by ‘SummarizedExperiment::arbind’ when loading ‘DESeq2’
+2017-09-26 17:29:34    4: replacing previous import ‘IRanges::acbind’ by ‘SummarizedExperiment::acbind’ when loading ‘DESeq2’
+2017-09-26 17:29:36    converting counts to integer mode
+2017-09-26 17:29:37    -- note: fitType='parametric', but the dispersion trend was not well captured by the
+2017-09-26 17:29:37       function: y = a/x + b, and a local regression fit was automatically substituted.
+2017-09-26 17:29:37       specify fitType='local' or 'mean' to avoid this message next time.
+2017-09-26 17:29:37  [DEBUG] 
+2017-09-26 17:29:37  [DEBUG] Rename /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc -> /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/log/multiqc_bcbio
+2017-09-26 17:29:37  multiqc -f -v -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2 -c /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/az_multiqc_config.yaml -c /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/log/multiqc_bcbio/multiqc_config.yaml -l /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/multiqc_list_files.txt
+2017-09-26 17:29:40    [2017-09-26 17:29:40,793] multiqc                                            [DEBUG  ]  No MultiQC config found: /Users/vladsaveliev/vagrant/MultiQC/multiqc_config.yaml
+2017-09-26 17:29:40    [2017-09-26 17:29:40,793] multiqc                                            [DEBUG  ]  No MultiQC config found: /Users/vladsaveliev/.multiqc_config.yaml
+2017-09-26 17:29:40    [2017-09-26 17:29:40,794] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+2017-09-26 17:29:40    [2017-09-26 17:29:40,800] multiqc                                            [DEBUG  ]  Loading config settings from: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/az_multiqc_config.yaml
+2017-09-26 17:29:40    [2017-09-26 17:29:40,800] multiqc                                            [DEBUG  ]  New config 'az': {'expression_links': ['<a href="expression/html/counts.html">Gene counts</a>'], 'is_rnaseq': True, 'run_section': {'analysis_dir': '/Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final', 'data_versions': '<a href="log/data_versions.csv">data versions</a>', 'program_versions': '<a href="log/programs.txt">program versions</a>', 'run_date': '26 Sep 2017, 17:29 (GMT+0300)', 'suite_version': 'Reporting Suite v.2.3.21, last modified 26 Sep 2017, 15:00 (GMT+0300)'}}
+2017-09-26 17:29:40    [2017-09-26 17:29:40,800] multiqc                                            [DEBUG  ]  New config 'qualimap_config': {'general_stats_coverage': ['1', '5', '10', '20', '50', '100', '200', '500', '1000', '2000', '5000', '10000', '20000', '50000'], 'general_stats_coverage_hidden': ['50', '100', '200', '500', '1000', '2000', '5000', '10000', '20000', '50000']}
+2017-09-26 17:29:40    [2017-09-26 17:29:40,800] multiqc                                            [DEBUG  ]  New config 'title': bcbio_postproc_rnaseq_hg38_hisat2
+2017-09-26 17:29:40    [2017-09-26 17:29:40,802] multiqc                                            [DEBUG  ]  Loading config settings from: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/log/multiqc_bcbio/multiqc_config.yaml
+2017-09-26 17:29:40    [2017-09-26 17:29:40,802] multiqc                                            [DEBUG  ]  New config 'table_columns_visible': {}
+2017-09-26 17:29:40    [2017-09-26 17:29:40,802] multiqc.multiqc_az                                 [DEBUG  ]  Running config_loaded hook v1.1.1. Loading specific settings and metadata
+2017-09-26 17:29:40    [2017-09-26 17:29:40,815] multiqc                                            [DEBUG  ]  Command used: /Users/vlad/miniconda3/envs/ngs_reporting/bin/multiqc -f -v -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2 -c /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/az_multiqc_config.yaml -c /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/log/multiqc_bcbio/multiqc_config.yaml -l /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/multiqc_list_files.txt
+2017-09-26 17:29:40    [2017-09-26 17:29:40,815] multiqc                                            [INFO   ]  This is MultiQC v1.3.dev0 (1ee8035)
+2017-09-26 17:29:40    [2017-09-26 17:29:40,815] multiqc                                            [DEBUG  ]  Command     : /Users/vlad/miniconda3/envs/ngs_reporting/bin/multiqc -f -v -o /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2 -c /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/az_multiqc_config.yaml -c /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/log/multiqc_bcbio/multiqc_config.yaml -l /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/work/postproc/multiqc_list_files.txt
+2017-09-26 17:29:40    [2017-09-26 17:29:40,815] multiqc                                            [DEBUG  ]  Working dir : /Users/vladsaveliev/vagrant/NGS_Reporting_TestData
+2017-09-26 17:29:40    [2017-09-26 17:29:40,816] multiqc                                            [INFO   ]  Template    : az
+2017-09-26 17:29:40    [2017-09-26 17:29:40,816] multiqc                                            [INFO   ]  Report title: bcbio_postproc_rnaseq_hg38_hisat2
+2017-09-26 17:29:40    [2017-09-26 17:29:40,817] multiqc                                            [DEBUG  ]  Analysing modules: adapterRemoval, afterqc, bamtools, bcl2fastq, biobloomtools, bismark, bowtie1, bowtie2, busco, clusterflow, conpair, custom_content, cutadapt, disambiguate, fastq_screen, featureCounts, flexbar, gatk, hicup, hisat2, homer, htseq, jellyfish, kallisto, leehom, macs2, methylQA, peddy, prokka, qorts, quast, rna_seqc, rseqc, salmon, samblaster, skewer, slamdunk, sortmerna, star, theta2, tophat, trimmomatic, vcftools, rnaseq_az, targqc, bcbio, samtools, goleft_indexcov, bcftools, picard, qualimap, snpeff, fastqc, preseq
+2017-09-26 17:29:40    [2017-09-26 17:29:40,817] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /var/folders/7p/ht5bn1r13y12k1sp5qpfdmt00000gp/T/tmpz_hki___
+2017-09-26 17:29:40    [2017-09-26 17:29:40,821] multiqc                                            [DEBUG  ]  Ignored search patterns as didn't match running modules: rsem
+2017-09-26 17:29:41    Searching 25 files..
+2017-09-26 17:29:41    [2017-09-26 17:29:40,984] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+2017-09-26 17:29:41    [2017-09-26 17:29:41,362] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+2017-09-26 17:29:41    [2017-09-26 17:29:41,604] multiqc.modules.adapterRemoval.adapterRemoval      [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,609] multiqc.modules.afterqc.afterqc                    [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,613] multiqc.modules.bamtools.bamtools                  [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,617] multiqc.modules.bcl2fastq.bcl2fastq                [DEBUG  ]  Could not find any bcl2fastq data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,620] multiqc.modules.biobloomtools.biobloomtools        [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,624] multiqc.modules.bismark.bismark                    [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,628] multiqc.modules.bowtie1.bowtie1                    [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,640] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,647] multiqc.modules.busco.busco                        [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,677] multiqc.modules.clusterflow.clusterflow            [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,720] multiqc.modules.conpair.conpair                    [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,726] multiqc.modules.custom_content.custom_content      [DEBUG  ]  No custom content found
+2017-09-26 17:29:41    [2017-09-26 17:29:41,730] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,736] multiqc.modules.disambiguate.disambiguate          [DEBUG  ]  Could not find any data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,740] multiqc.modules.fastq_screen.fastq_screen          [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,744] multiqc.modules.featureCounts.feature_counts       [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,749] multiqc.modules.flexbar.flexbar                    [DEBUG  ]  Could not find any Flexbar data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,756] multiqc.modules.gatk.gatk                          [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,760] multiqc.modules.hicup.hicup                        [DEBUG  ]  Could not find any HiCUP data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,762] multiqc.modules.hisat2.hisat2                      [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,766] multiqc.modules.homer.homer                        [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,770] multiqc.modules.htseq.htseq                        [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,776] multiqc.modules.jellyfish.jellyfish                [DEBUG  ]  Could not find any data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,780] multiqc.modules.kallisto.kallisto                  [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,785] multiqc.modules.leehom.leehom                      [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,789] multiqc.modules.macs2.macs2                        [DEBUG  ]  Could not find any MACS2 data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,792] multiqc.modules.methylQA.methylQA                  [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,796] multiqc.modules.peddy.peddy                        [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,800] multiqc.modules.prokka.prokka                      [DEBUG  ]  Could not find any Prokka data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,804] multiqc.modules.qorts.qorts                        [DEBUG  ]  Could not find any QoRTs data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,808] multiqc.modules.quast.quast                        [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,812] multiqc.modules.rna_seqc.rna_seqc                  [DEBUG  ]  Could not find any RNA-SeQC data in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,819] multiqc.modules.rseqc.rseqc                        [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:41    [2017-09-26 17:29:41,821] multiqc.modules.salmon.salmon                      [DEBUG  ]  Could not find any Salmon data in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,824] multiqc.modules.samblaster.samblaster              [DEBUG  ]  Could not find any data in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,827] multiqc.modules.skewer.skewer                      [DEBUG  ]  Could not find any data in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,830] multiqc.modules.slamdunk.slamdunk                  [DEBUG  ]  No slamdunk reports found.
+2017-09-26 17:29:42    [2017-09-26 17:29:41,834] multiqc.modules.sortmerna.sortmerna                [DEBUG  ]  Could not find any SortMeRNA data in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,836] multiqc.modules.star.star                          [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,839] multiqc.modules.theta2.theta2                      [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,841] multiqc.modules.tophat.tophat                      [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,844] multiqc.modules.trimmomatic.trimmomatic            [DEBUG  ]  Could not find any Trimmomatic data in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,849] multiqc.modules.vcftools.vcftools                  [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,866] multiqc                                            [ERROR  ]  Oops! The 'targqc' MultiQC module broke...
+2017-09-26 17:29:42                        Please copy the following traceback and report it at https://github.com/ewels/MultiQC/issues
+2017-09-26 17:29:42                        (if possible, include a log file that triggers the error)
+2017-09-26 17:29:42    ============================================================
+2017-09-26 17:29:42    Module targqc raised an exception: Traceback (most recent call last):
+2017-09-26 17:29:42      File "/Users/vladsaveliev/vagrant/MultiQC/scripts/multiqc", line 410, in multiqc
+2017-09-26 17:29:42        mod = config.avail_modules[this_module].load()
+2017-09-26 17:29:42      File "/Users/vladsaveliev/miniconda3/envs/ngs_reporting/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2303, in load
+2017-09-26 17:29:42        return self.resolve()
+2017-09-26 17:29:42      File "/Users/vladsaveliev/miniconda3/envs/ngs_reporting/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2309, in resolve
+2017-09-26 17:29:42        module = __import__(self.module_name, fromlist=['__name__'], level=0)
+2017-09-26 17:29:42    ModuleNotFoundError: No module named 'multiqc_az.modules.targqc'
+2017-09-26 17:29:42    ============================================================
+2017-09-26 17:29:42    [2017-09-26 17:29:41,870] multiqc.multiqc_bcbio                              [INFO   ]  Found 2 reports
+2017-09-26 17:29:42    [2017-09-26 17:29:41,904] multiqc.modules.samtools.samtools                  [INFO   ]  Found 2 stats reports
+2017-09-26 17:29:42    [2017-09-26 17:29:41,906] multiqc.modules.goleft_indexcov.goleft_indexcov    [DEBUG  ]  Did not find goleft indexcov outputs in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,910] multiqc.modules.bcftools.bcftools                  [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,918] multiqc.modules.picard.picard                      [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,922] multiqc.modules.qualimap.QM_BamQC                  [DEBUG  ]  Custom Qualimap thresholds: 1, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000
+2017-09-26 17:29:42    [2017-09-26 17:29:41,922] multiqc.modules.qualimap.QM_BamQC                  [DEBUG  ]  Hiding Qualimap thresholds: 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000
+2017-09-26 17:29:42    [2017-09-26 17:29:41,922] multiqc.modules.qualimap.qualimap                  [DEBUG  ]  Could not find any reports in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,925] multiqc.modules.snpeff.snpeff                      [DEBUG  ]  Could not find any data in []
+2017-09-26 17:29:42    [2017-09-26 17:29:41,976] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 2 reports
+2017-09-26 17:29:42    [2017-09-26 17:29:42,030] multiqc.modules.preseq.preseq                      [DEBUG  ]  Could not find any preseq data in []
+2017-09-26 17:29:42    [2017-09-26 17:29:42,039] multiqc                                            [WARNING]  Importing genologics failed: Traceback (most recent call last):
+2017-09-26 17:29:42      File "/Users/vladsaveliev/miniconda3/envs/ngs_reporting/lib/python3.6/site-packages/multiqc_clarity/multiqc_clarity.py", line 34, in __init__
+2017-09-26 17:29:42        from genologics import config as genologics_config
+2017-09-26 17:29:42      File "/Users/vladsaveliev/miniconda3/envs/ngs_reporting/lib/python3.6/site-packages/genologics/config.py", line 5, in <module>
+2017-09-26 17:29:42        import ConfigParser
+2017-09-26 17:29:42    ModuleNotFoundError: No module named 'ConfigParser'
+2017-09-26 17:29:42    
+2017-09-26 17:29:42    [2017-09-26 17:29:42,051] multiqc                                            [INFO   ]  Compressing plot data
+2017-09-26 17:29:42    [2017-09-26 17:29:42,109] multiqc                                            [INFO   ]  Report      : results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/report.html
+2017-09-26 17:29:42    [2017-09-26 17:29:42,109] multiqc                                            [INFO   ]  Data        : None
+2017-09-26 17:29:42    [2017-09-26 17:29:42,344] multiqc                                            [INFO   ]  MultiQC complete
+2017-09-26 17:29:42  
+2017-09-26 17:29:42  Exposing to NGS webserver...
+2017-09-26 17:29:42  
+2017-09-26 17:29:42  Report path: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/report.html
+2017-09-26 17:29:42  
+2017-09-26 17:29:42  ----------------------------------------------------------------------
+2017-09-26 17:29:42  Done post-processing.

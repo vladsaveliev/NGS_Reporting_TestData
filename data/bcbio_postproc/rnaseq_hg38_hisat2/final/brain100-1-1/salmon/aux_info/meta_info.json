@@ -1,0 +1,32 @@
+{
+    "salmon_version": "0.8.2",
+    "samp_type": "bootstrap",
+    "num_libraries": 1,
+    "library_types": [
+        "IU"
+    ],
+    "frag_dist_length": 1001,
+    "seq_bias_correct": false,
+    "gc_bias_correct": true,
+    "num_bias_bins": 4096,
+    "mapping_type": "mapping",
+    "num_targets": 292649,
+    "serialized_eq_classes": false,
+    "eq_class_properties": [],
+    "length_classes": [
+        502,
+        685,
+        1122,
+        2455,
+        104301
+    ],
+    "index_seq_hash": "e3999b221f1a5c6bb0f885fcb2f233812c0ca2bce9312750bac5ecb1b554b357",
+    "index_name_hash": "f949f35e659ae473bc4c919aa6cefeab77ac72e4a9220de872fbeee01bcc5c74",
+    "num_bootstraps": 30,
+    "num_processed": 7374,
+    "num_mapped": 7280,
+    "percent_mapped": 98.72525088147546,
+    "call": "quant",
+    "start_time": "Tue Sep 26 16:05:13 2017",
+    "end_time": "Tue Sep 26 16:08:43 2017"
+}

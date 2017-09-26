@@ -1,0 +1,75 @@
+[2017-09-26 16:05:13.401] [jointLog] [info] parsing read library format
+[2017-09-26 16:05:13.408] [jointLog] [info] There is 1 library.
+[2017-09-26 16:05:13.529] [jointLog] [info] Loading Quasi index
+[2017-09-26 16:05:13.529] [jointLog] [info] Loading 32-bit quasi index
+[2017-09-26 16:05:36.399] [jointLog] [info] done
+[2017-09-26 16:05:36.399] [jointLog] [info] Index contained 292649 targets
+[2017-09-26 16:05:42.033] [jointLog] [info] Computed 2964 rich equivalence classes for further processing
+[2017-09-26 16:05:42.033] [jointLog] [info] Counted 7280 total reads in the equivalence classes 
+[2017-09-26 16:05:42.064] [jointLog] [warning] Only 7280 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2017-09-26 16:05:42.064] [jointLog] [info] Mapping rate = 98.7253%
+
+[2017-09-26 16:05:42.064] [jointLog] [info] finished quantifyLibrary()
+[2017-09-26 16:05:42.065] [jointLog] [info] Starting optimizer
+[2017-09-26 16:05:42.034] [fileLog] [info] 
+At end of round 0
+==================
+Observed 7374 total fragments (7374 in most recent round)
+
+[2017-09-26 16:05:42.214] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2017-09-26 16:05:42.219] [jointLog] [info] iteration = 0 | max rel diff. = 0.989532
+[2017-09-26 16:05:42.256] [jointLog] [info] iteration 11, adjusting effective lengths to account for biases
+[2017-09-26 16:07:10.530] [jointLog] [info] Computed expected counts (for bias correction)
+[2017-09-26 16:07:10.532] [jointLog] [info] processed bias for 0.0% of the transcripts
+[2017-09-26 16:08:25.503] [jointLog] [info] processed bias for 100.0% of the transcripts
+[2017-09-26 16:08:25.631] [jointLog] [info] iteration = 100 | max rel diff. = 0.351036
+[2017-09-26 16:08:25.767] [jointLog] [info] iteration = 200 | max rel diff. = 0.103733
+[2017-09-26 16:08:25.906] [jointLog] [info] iteration = 300 | max rel diff. = 0.0672582
+[2017-09-26 16:08:26.053] [jointLog] [info] iteration = 400 | max rel diff. = 0.0163621
+[2017-09-26 16:08:26.191] [jointLog] [info] iteration = 500 | max rel diff. = 0.0134448
+[2017-09-26 16:08:26.329] [jointLog] [info] iteration = 600 | max rel diff. = 0.0134447
+[2017-09-26 16:08:26.347] [jointLog] [info] iteration = 614 | max rel diff. = 0.00996546
+[2017-09-26 16:08:26.368] [jointLog] [info] Finished optimizer
+[2017-09-26 16:08:26.368] [jointLog] [info] writing output 
+
+[2017-09-26 16:08:26.788] [jointLog] [info] Starting Bootstrapping
+[2017-09-26 16:08:26.792] [jointLog] [info] Will draw 30 bootstrap samples
+[2017-09-26 16:08:26.792] [jointLog] [info] Optimizing over 2964 equivalence classes
+[2017-09-26 16:08:26.807] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2017-09-26 16:08:27.382] [jointLog] [info] wrote 1 bootstraps
+[2017-09-26 16:08:27.908] [jointLog] [info] wrote 2 bootstraps
+[2017-09-26 16:08:28.449] [jointLog] [info] wrote 3 bootstraps
+[2017-09-26 16:08:29.023] [jointLog] [info] wrote 4 bootstraps
+[2017-09-26 16:08:29.687] [jointLog] [info] wrote 5 bootstraps
+[2017-09-26 16:08:30.316] [jointLog] [info] wrote 6 bootstraps
+[2017-09-26 16:08:30.870] [jointLog] [info] wrote 7 bootstraps
+[2017-09-26 16:08:31.464] [jointLog] [info] wrote 8 bootstraps
+[2017-09-26 16:08:32.016] [jointLog] [info] wrote 9 bootstraps
+[2017-09-26 16:08:32.695] [jointLog] [info] wrote 10 bootstraps
+[2017-09-26 16:08:33.276] [jointLog] [info] wrote 11 bootstraps
+[2017-09-26 16:08:33.785] [jointLog] [info] wrote 12 bootstraps
+[2017-09-26 16:08:34.442] [jointLog] [info] wrote 13 bootstraps
+[2017-09-26 16:08:34.950] [jointLog] [info] wrote 14 bootstraps
+[2017-09-26 16:08:35.535] [jointLog] [info] wrote 15 bootstraps
+[2017-09-26 16:08:36.215] [jointLog] [info] wrote 16 bootstraps
+[2017-09-26 16:08:36.841] [jointLog] [info] wrote 17 bootstraps
+[2017-09-26 16:08:37.341] [jointLog] [info] wrote 18 bootstraps
+[2017-09-26 16:08:37.856] [jointLog] [info] wrote 19 bootstraps
+[2017-09-26 16:08:38.401] [jointLog] [info] wrote 20 bootstraps
+[2017-09-26 16:08:38.935] [jointLog] [info] wrote 21 bootstraps
+[2017-09-26 16:08:39.398] [jointLog] [info] wrote 22 bootstraps
+[2017-09-26 16:08:39.861] [jointLog] [info] wrote 23 bootstraps
+[2017-09-26 16:08:40.307] [jointLog] [info] wrote 24 bootstraps
+[2017-09-26 16:08:40.827] [jointLog] [info] wrote 25 bootstraps
+[2017-09-26 16:08:41.375] [jointLog] [info] wrote 26 bootstraps
+[2017-09-26 16:08:41.810] [jointLog] [info] wrote 27 bootstraps
+[2017-09-26 16:08:42.313] [jointLog] [info] wrote 28 bootstraps
+[2017-09-26 16:08:42.749] [jointLog] [info] wrote 29 bootstraps
+[2017-09-26 16:08:43.219] [jointLog] [info] wrote 30 bootstraps
+[2017-09-26 16:08:43.219] [jointLog] [info] Finished Bootstrapping
+[2017-09-26 16:08:43.220] [jointLog] [warning] NOTE: Read Lib [( /dev/fd/63, /dev/fd/62 )] :
+
+Greater than 5% of the fragments disagreed with the provided library type; check the file: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/bcbiotx/tmpGfKARA/quant/lib_format_counts.json for details
+

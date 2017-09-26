@@ -1,0 +1,168 @@
+[2017-09-26T12:46Z] System YAML configuration: /home/vsaveliev/bcbio/galaxy/bcbio_system.yaml
+[2017-09-26T12:46Z] Timing: organize samples
+[2017-09-26T12:46Z] multiprocessing: organize_samples
+[2017-09-26T12:46Z] Using input YAML configuration: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/config/rnaseq_hg38_hisat2.yaml
+[2017-09-26T12:46Z] Checking sample YAML configuration: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/config/rnaseq_hg38_hisat2.yaml
+[2017-09-26T12:46Z] Testing minimum versions of installed programs
+[2017-09-26T12:46Z] multiprocessing: prepare_sample
+[2017-09-26T12:46Z] Timing: alignment
+[2017-09-26T12:46Z] multiprocessing: disambiguate_split
+[2017-09-26T12:46Z] multiprocessing: process_alignment
+[2017-09-26T12:46Z] Aligning lane 1_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T12:46Z] Aligning lane 1_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T12:47Z] Aligning lane 2_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T12:48Z] Aligning lane 2_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T12:48Z] Timing: disambiguation
+[2017-09-26T12:48Z] multiprocessing: run_disambiguate
+[2017-09-26T12:49Z] multiprocessing: disambiguate_merge_extras
+[2017-09-26T12:49Z] Timing: transcript assembly
+[2017-09-26T12:49Z] Timing: estimate expression (threaded)
+[2017-09-26T12:49Z] multiprocessing: generate_transcript_counts
+[2017-09-26T12:49Z] multiprocessing: run_salmon_index
+[2017-09-26T13:05Z] Transcriptome index for /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/inputs/transcriptome/hg38-mm10.fa detected, skipping building.
+[2017-09-26T13:05Z] multiprocessing: run_salmon_reads
+[2017-09-26T13:05Z] Transcriptome index for /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/inputs/transcriptome/hg38-mm10.fa detected, skipping building.
+[2017-09-26T13:08Z] Transcriptome index for /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/inputs/transcriptome/hg38-mm10.fa detected, skipping building.
+[2017-09-26T13:16Z] multiprocessing: detect_fusions
+[2017-09-26T13:16Z] Timing: estimate expression (single threaded)
+[2017-09-26T13:16Z] Combining count files into /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/htseq-count/combined.counts.
+[2017-09-26T13:22Z] Timing: RNA-seq variant calling
+[2017-09-26T13:22Z] multiprocessing: run_rnaseq_variant_calling
+[2017-09-26T13:22Z] multiprocessing: run_rnaseq_joint_genotyping
+[2017-09-26T13:22Z] Timing: quality control
+[2017-09-26T13:22Z] multiprocessing: pipeline_summary
+[2017-09-26T13:22Z] QC: brain100-1-1 fastqc
+[2017-09-26T13:22Z] Produced HTML report /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/brain100-1-1/fastqc/fastqc_report.html
+[2017-09-26T13:22Z] QC: brain100-1-1 qualimap_rnaseq
+[2017-09-26T13:38Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/home/vsaveliev/bcbio-nextgen/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/home/vsaveliev/bcbio-nextgen/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; sed -i 's/bam file = .*/bam file = brain100-1-1.bam/' /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/bcbiotx/tmp5HoJUo/brain100-1-1/rnaseq_qc_results.txt
+sed: can't read /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/bcbiotx/tmp5HoJUo/brain100-1-1/rnaseq_qc_results.txt: No such file or directory
+' returned non-zero exit status 2
+[2017-09-26T13:57Z] System YAML configuration: /home/vsaveliev/bcbio/galaxy/bcbio_system.yaml
+[2017-09-26T13:57Z] Timing: organize samples
+[2017-09-26T13:57Z] multiprocessing: organize_samples
+[2017-09-26T13:57Z] Using input YAML configuration: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/config/rnaseq_hg38_hisat2.yaml
+[2017-09-26T13:57Z] Checking sample YAML configuration: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/config/rnaseq_hg38_hisat2.yaml
+[2017-09-26T13:57Z] Testing minimum versions of installed programs
+[2017-09-26T13:57Z] multiprocessing: prepare_sample
+[2017-09-26T13:57Z] Timing: alignment
+[2017-09-26T13:57Z] multiprocessing: disambiguate_split
+[2017-09-26T13:57Z] multiprocessing: process_alignment
+[2017-09-26T13:57Z] Aligning lane 1_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T13:57Z] Aligning lane 1_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T13:57Z] Aligning lane 2_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T13:57Z] Aligning lane 2_2017-08-13_rnaseq_hg38_hisat2 with hisat2 aligner
+[2017-09-26T13:57Z] Timing: disambiguation
+[2017-09-26T13:57Z] multiprocessing: run_disambiguate
+[2017-09-26T13:57Z] multiprocessing: disambiguate_merge_extras
+[2017-09-26T13:57Z] Timing: transcript assembly
+[2017-09-26T13:57Z] Timing: estimate expression (threaded)
+[2017-09-26T13:57Z] multiprocessing: generate_transcript_counts
+[2017-09-26T13:57Z] multiprocessing: run_salmon_index
+[2017-09-26T13:57Z] Transcriptome index for /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/inputs/transcriptome/hg38-mm10.fa detected, skipping building.
+[2017-09-26T13:57Z] Transcriptome index for /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/inputs/transcriptome/hg38-mm10.fa detected, skipping building.
+[2017-09-26T13:57Z] multiprocessing: run_salmon_reads
+[2017-09-26T13:57Z] multiprocessing: detect_fusions
+[2017-09-26T13:57Z] Timing: estimate expression (single threaded)
+[2017-09-26T14:00Z] Timing: RNA-seq variant calling
+[2017-09-26T14:00Z] multiprocessing: run_rnaseq_variant_calling
+[2017-09-26T14:00Z] multiprocessing: run_rnaseq_joint_genotyping
+[2017-09-26T14:00Z] Timing: quality control
+[2017-09-26T14:00Z] multiprocessing: pipeline_summary
+[2017-09-26T14:00Z] QC: brain100-1-1 fastqc
+[2017-09-26T14:00Z] Produced HTML report /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/brain100-1-1/fastqc/fastqc_report.html
+[2017-09-26T14:00Z] QC: brain100-1-1 samtools
+[2017-09-26T14:00Z] QC: jurkat100-1-5 fastqc
+[2017-09-26T14:00Z] Produced HTML report /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/jurkat100-1-5/fastqc/fastqc_report.html
+[2017-09-26T14:00Z] QC: jurkat100-1-5 samtools
+[2017-09-26T14:00Z] multiprocessing: qsignature_summary
+[2017-09-26T14:00Z] multiprocessing: multiqc_summary
+[2017-09-26T14:00Z] copy qsignature
+[2017-09-26T14:00Z] summarize fastqc
+[2017-09-26T14:00Z] summarize target information
+[2017-09-26T14:00Z] summarize coverage
+[2017-09-26T14:00Z] summarize variants
+[2017-09-26T14:00Z] summarize metrics
+[2017-09-26T14:01Z] Timing: upload
+[2017-09-26T14:01Z] multiprocessing: upload_samples
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/fastqc_report.html
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/fastqc_data.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/brain100-1-1.zip
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/Per_base_sequence_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/Per_base_N_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/qc/samtools/brain100-1-1.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-ready.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-disambiguate-mm10-ambiguous.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-disambiguate-mm10-ambiguous.bam.bai
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-disambiguate-mm10.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-disambiguate-mm10.bam.bai
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-disambiguate-summary.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-disambiguate-hg38-ambiguous.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-disambiguate-hg38-ambiguous.bam.bai
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/brain100-1-1-ready.counts
+[2017-09-26T14:01Z] Storing directory in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/brain100-1-1/salmon
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/fastqc_report.html
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/fastqc_data.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/jurkat100-1-5.zip
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/Per_base_sequence_quality.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/Per_tile_sequence_quality.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/Per_sequence_quality_scores.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/Per_base_sequence_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/Per_sequence_GC_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/Per_base_N_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/fastqc/Sequence_Length_Distribution.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/qc/samtools/jurkat100-1-5.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-ready.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-disambiguate-mm10-ambiguous.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-disambiguate-mm10-ambiguous.bam.bai
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-disambiguate-mm10.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-disambiguate-mm10.bam.bai
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-disambiguate-summary.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-disambiguate-hg38-ambiguous.bam
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-disambiguate-hg38-ambiguous.bam.bai
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/jurkat100-1-5-ready.counts
+[2017-09-26T14:01Z] Storing directory in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/jurkat100-1-5/salmon
+[2017-09-26T14:01Z] multiprocessing: upload_samples_project
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/programs.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/data_versions.csv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/bcbio-nextgen.log
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/bcbio-nextgen-commands.log
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/project-summary.yaml
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_report.html
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_data/seqbuster_isomirs.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_data/multiqc_general_stats.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_data/multiqc_fastqc.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_data/seqbuster_mirs.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_data/multiqc_sources.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_data/multiqc_samtools_stats.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_data/multiqc_bcbio_metrics.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/metrics/brain100-1-1_bcbio.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/metrics/jurkat100-1-5_bcbio.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/fastqc/Per_tile_sequence_quality.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/fastqc/Per_sequence_quality_scores.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/fastqc/Per_base_sequence_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/fastqc/Per_base_sequence_quality.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/fastqc/Sequence_Length_Distribution.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/fastqc/Per_sequence_GC_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/fastqc/Per_base_N_content.tsv
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/report-ready.Rmd
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/report/qc-coverage-report-run.R
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/multiqc_config.yaml
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/list_files.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/multiqc/list_files_final.txt
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/combined.counts
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/annotated_combined.counts
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/tx2gene.csv
+[2017-09-26T14:01Z] Storing directory in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/transcriptome
+[2017-09-26T14:01Z] multiprocessing: upload_samples_project
+[2017-09-26T14:01Z] Storing in local filesystem: /Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/final/2017-08-13_rnaseq_hg38_hisat2/bcbio-nextgen.log

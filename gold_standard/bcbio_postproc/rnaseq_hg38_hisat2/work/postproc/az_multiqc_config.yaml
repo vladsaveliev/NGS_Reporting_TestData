@@ -1,0 +1,38 @@
+az:
+  expression_links:
+  - <a href="expression/html/counts.html">Gene counts</a>
+  is_rnaseq: true
+  run_section:
+    analysis_dir: /Users/vladsaveliev/vagrant/NGS_Reporting_TestData/results/bcbio_postproc/rnaseq_hg38_hisat2/final
+    data_versions: <a href="log/data_versions.csv">data versions</a>
+    program_versions: <a href="log/programs.txt">program versions</a>
+    run_date: 26 Sep 2017, 17:29 (GMT+0300)
+    suite_version: Reporting Suite v.2.3.21, last modified 26 Sep 2017, 15:00 (GMT+0300)
+qualimap_config:
+  general_stats_coverage:
+  - '1'
+  - '5'
+  - '10'
+  - '20'
+  - '50'
+  - '100'
+  - '200'
+  - '500'
+  - '1000'
+  - '2000'
+  - '5000'
+  - '10000'
+  - '20000'
+  - '50000'
+  general_stats_coverage_hidden:
+  - '50'
+  - '100'
+  - '200'
+  - '500'
+  - '1000'
+  - '2000'
+  - '5000'
+  - '10000'
+  - '20000'
+  - '50000'
+title: bcbio_postproc_rnaseq_hg38_hisat2

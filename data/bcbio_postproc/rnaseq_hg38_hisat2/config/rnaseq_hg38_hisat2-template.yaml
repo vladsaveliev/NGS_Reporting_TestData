@@ -1,0 +1,9 @@
+# Template for human RNA-seq using Illumina prepared samples
+---
+details:
+  - analysis: RNA-seq
+    genome_build: hg38 # [hg19, mm10, rn6]
+    algorithm:
+      aligner: hisat2 # [tophat2, star, hisat2] USE STAR FOR hg19
+      trim_reads: false # ignore, star and hisat2 can do trimming
+      tools_off: qualimap

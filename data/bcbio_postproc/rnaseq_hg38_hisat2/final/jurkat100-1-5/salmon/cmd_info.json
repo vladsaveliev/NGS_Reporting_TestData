@@ -1,0 +1,12 @@
+{
+    "salmon_version": "0.8.2",
+    "libType": "IU",
+    "index": "/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/salmon/index/hg38-mm10-mm10",
+    "threads": "1",
+    "gcBias": [],
+    "output": "/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/bcbiotx/tmpwTBtn7/quant",
+    "mates1": "/dev/fd/63",
+    "mates2": "/dev/fd/62",
+    "numBootstraps": "30",
+    "auxDir": "aux_info"
+}

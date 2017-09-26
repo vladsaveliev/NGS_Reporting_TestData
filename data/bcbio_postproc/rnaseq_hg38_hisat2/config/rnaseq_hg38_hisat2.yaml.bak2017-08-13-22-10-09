@@ -1,0 +1,25 @@
+details:
+- algorithm:
+    aligner: hisat2
+    trim_reads: false
+  analysis: RNA-seq
+  description: brain100-1-1
+  files:
+  - /Sid/vsaveliev/bcbio_tests_rna/input/brain100-1-1_R1.fq.gz
+  - /Sid/vsaveliev/bcbio_tests_rna/input/brain100-1-1_R2.fq.gz
+  genome_build: hg38
+  metadata: {}
+- algorithm:
+    aligner: hisat2
+    trim_reads: false
+  analysis: RNA-seq
+  description: jurkat100-1-5
+  files:
+  - /Sid/vsaveliev/bcbio_tests_rna/input/jurkat100-1-5_R1.fq.gz
+  - /Sid/vsaveliev/bcbio_tests_rna/input/jurkat100-1-5_R2.fq.gz
+  genome_build: hg38
+  metadata: {}
+fc_date: '2017-08-13'
+fc_name: rnaseq_hg38_hisat2
+upload:
+  dir: ../final

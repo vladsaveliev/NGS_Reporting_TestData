@@ -1,0 +1,2 @@
+sample	unique species A pairs	unique species B pairs	ambiguous pairs
+2_2017-08-13_rnaseq_hg38_hisat2.nsorted	38	0	93

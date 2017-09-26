@@ -1,3 +1,0 @@
-Sample	FastQC_percent_gc	FastQC_percent_duplicates	Samtools Stats_reads_mapped	bcbio_Duplicates_pct	Samtools Stats_error_rate	Samtools Stats_raw_total_sequences	bcbio_rRNA_rate	Samtools Stats_reads_mapped_percent	bcbio_Total_reads	FastQC_total_sequences	Samtools Stats_non_primary_alignments	bcbio_Mapped_reads	FastQC_avg_sequence_length	FastQC_percent_fails	QualiMap_reads_aligned
-PI3Ksign2_E001006_CD4Tcells_AZ4943_NS_KT_15	48.0	17.3553719008	95.0	0.0	0.00183047	100.0	0.0	95.0	100.0	121.0	21.0	95.0	75.1900826446	33.3333333333	95.0
-PI3Ksign2_E001006_CD4Tcells_AZ4943_S_KT_16	51.0	23.0769230769	96.0	0.0	0.001802052	100.0	0.0	96.0	100.0	130.0	30.0	96.0	75.4	33.3333333333	96.0

@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+bcbio	all_sections	brain100-1-1	/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/multiqc/report/metrics/brain100-1-1_bcbio.txt
+bcbio	all_sections	jurkat100-1-5	/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/multiqc/report/metrics/jurkat100-1-5_bcbio.txt
+FastQC	all_sections	brain100-1-1	/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/brain100-1-1/fastqc/fastqc_data.txt
+FastQC	all_sections	jurkat100-1-5	/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/jurkat100-1-5/fastqc/fastqc_data.txt
+Samtools	stats	brain100-1-1	/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/brain100-1-1/samtools/brain100-1-1.txt
+Samtools	stats	jurkat100-1-5	/Sid/vsaveliev/bcbio_tests_rna/rnaseq_hg38_hisat2/work/qc/jurkat100-1-5/samtools/jurkat100-1-5.txt
