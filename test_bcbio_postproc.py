@@ -138,7 +138,7 @@ class Test_bcbio_postproc(BaseTestCase):
             for sample in samples:
                 failed = self._check_file(failed, join(datestamp_dir, 'reports', sample + '.html'), wrapper=html_wrapper, check_diff=False)
                 sample_dir = join(bcbio_proj_dir, 'final', sample)
-                self._check_var_in_sample(failed, sample_dir, sample, caller)
+                failed = self._check_var_in_sample(failed, sample_dir, sample, caller)
 
         assert not run_with_error, 'post-processing finished with error'
         assert not failed, 'some of file checks have failed'
