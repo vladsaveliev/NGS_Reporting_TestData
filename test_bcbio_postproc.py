@@ -169,14 +169,14 @@ class Test_bcbio_postproc(BaseTestCase):
         failed = False
         failed = self._check_file(failed, join(datestamp_dir, 'annotated_combined.counts'))
         failed = self._check_file(failed, join(datestamp_dir, 'tx2gene.csv'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'counts.tsv'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'dexseq.tsv'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'gene.sf.tpm.tsv'))
-        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'isoform.sf.tpm.tsv'))
+        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.counts'))
+        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.dexseq'))
+        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.gene.sf.tpm'))
+        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'combined.isoform.sf.tpm'))
         failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'counts.html'), wrapper=['grep', '<td metric='])
-        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'dexseq.html'), wrapper=['grep', '<td metric='])
-        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'gene.sf.tpm.html'), wrapper=['grep', '<td metric='])
-        failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'isoform.sf.tpm.html'), wrapper=['grep', '<td metric='])
+        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'dexseq.html'), wrapper=['grep', '<td metric='])
+        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'gene.sf.tpm.html'), wrapper=['grep', '<td metric='])
+        # failed = self._check_file(failed, join(datestamp_dir, 'expression', 'html', 'isoform.sf.tpm.html'), wrapper=['grep', '<td metric='])
         failed = self._check_file(failed, join(datestamp_dir, 'report.html'), check_diff=False)
 
         assert not run_with_error, 'post-rpocessing finished with error'
