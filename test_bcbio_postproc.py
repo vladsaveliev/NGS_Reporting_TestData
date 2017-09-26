@@ -127,7 +127,6 @@ class Test_bcbio_postproc(BaseTestCase):
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c.filt.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c-coverage.tsv'), wrapper=['sort'])
-        failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'seq2c_mapping_reads.txt'))
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'cnvkit.tsv'), wrapper=['sort'])
         failed = self._check_file(failed, join(datestamp_dir, 'cnv', 'cnvkit.filt.tsv'), wrapper=['sort'])
         for caller, samples in callers.items():
