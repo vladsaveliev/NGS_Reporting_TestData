@@ -158,6 +158,15 @@ sambamba view $PROJ/jurkat100-1-5_S5/jurkat100-1-5_S5-ready.bam -L <(gunzip -c $
 # samtools sort -n jurkat100-1-5.bam -O BAM > jurkat100-1-5.sorted.bam
 bedtools bamtofastq -i jurkat100-1-5.bam -fq jurkat100-1-5_R1.fq -fq2 jurkat100-1-5_R2.fq
 bedtools bamtofastq -i brain100-1-1.bam -fq brain100-1-1_R1.fq -fq2 brain100-1-1_R2.fq
+
+##### GFF files #####
+# subset to 300 genes for tests:
+zgrep -f /Users/vsaveliev/git/NGS_Reporting/ngs_reporting/reference_data/key_genes/az_key_genes.300.txt \
+  ~/googledrive/bio/reference_data/genomes/Hsapiens/hg38/rnaseq/ref-transcripts.cancer.trx.gtf.gz \
+  | gnzip -c > ref-transcripts.cancer.trx.300.gtf.gz
+# subset the dexseq file:
+bedtools intersect -a ref-transcripts.dexseq.gff3 -b ref-transcripts.cancer.trx.300.gtf -wa -u \
+  > ref-transcripts.dexseq.trx.300.gff3
 '''
 
 # Removed in gold standard:
