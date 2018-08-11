@@ -68,7 +68,6 @@ class Test_varfilter(BaseTestCase):
     def test_01(self):
         self._test('',
                    i_vcf='032269P-OVARIAN-P2mL-07-IDTUMI09_S1-vardict.anno.vcf.gz',
-                   i_vcf2txt='032269P-OVARIAN-P2mL-07-IDTUMI09_S1.vardict.txt',
                    sample='032269P-OVARIAN-P2mL-07-IDTUMI09_S1',
                    genome='hg19',
                    target_type='panel')
